@@ -11,6 +11,26 @@
 		83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */; };
 		83FA53E22BF5064200F4C1CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53E12BF5064200F4C1CC /* ViewController.swift */; };
 		83FA53E72BF5064400F4C1CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FA53E62BF5064400F4C1CC /* Assets.xcassets */; };
+		83FA53FA2BF507BE00F4C1CC /* a.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53F92BF507BE00F4C1CC /* a.swift */; };
+		83FA53FC2BF507C500F4C1CC /* StringLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53FB2BF507C500F4C1CC /* StringLiterals.swift */; };
+		83FA53FE2BF507D200F4C1CC /* FontLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53FD2BF507D200F4C1CC /* FontLiterals.swift */; };
+		83FA54002BF507DB00F4C1CC /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53FF2BF507DB00F4C1CC /* NSObject+.swift */; };
+		83FA54022BF507EC00F4C1CC /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54012BF507EC00F4C1CC /* UIStackView+.swift */; };
+		83FA54042BF507FB00F4C1CC /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54032BF507FB00F4C1CC /* UIView+.swift */; };
+		83FA54062BF5081300F4C1CC /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54052BF5081300F4C1CC /* UITextField+.swift */; };
+		83FA54082BF5082300F4C1CC /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54072BF5082300F4C1CC /* UILabel+.swift */; };
+		83FA540A2BF5084000F4C1CC /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54092BF5084000F4C1CC /* UIViewController+.swift */; };
+		83FA540C2BF5085200F4C1CC /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA540B2BF5085200F4C1CC /* UIButton+.swift */; };
+		83FA540E2BF5086700F4C1CC /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA540D2BF5086700F4C1CC /* UIImageView+.swift */; };
+		83FA54122BF5096C00F4C1CC /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54112BF5096C00F4C1CC /* NetworkResult.swift */; };
+		83FA54162BF5099F00F4C1CC /* HomeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54152BF5099F00F4C1CC /* HomeAPIService.swift */; };
+		83FA54182BF509BD00F4C1CC /* GetHomeResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54172BF509BD00F4C1CC /* GetHomeResponseDTO.swift */; };
+		83FA541F2BF50A0B00F4C1CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA541E2BF50A0B00F4C1CC /* HomeViewController.swift */; };
+		83FA54212BF50A2D00F4C1CC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54202BF50A2D00F4C1CC /* HomeView.swift */; };
+		83FA54242BF50A6700F4C1CC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 83FA54232BF50A6700F4C1CC /* Kingfisher */; };
+		83FA54272BF50A9300F4C1CC /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 83FA54262BF50A9300F4C1CC /* Moya */; };
+		83FA542A2BF50A9F00F4C1CC /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 83FA54292BF50A9F00F4C1CC /* Then */; };
+		83FA542D2BF50AAA00F4C1CC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 83FA542C2BF50AAA00F4C1CC /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +40,22 @@
 		83FA53E12BF5064200F4C1CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83FA53E62BF5064400F4C1CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FA53EB2BF5064400F4C1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FA53F92BF507BE00F4C1CC /* a.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a.swift; sourceTree = "<group>"; };
+		83FA53FB2BF507C500F4C1CC /* StringLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiterals.swift; sourceTree = "<group>"; };
+		83FA53FD2BF507D200F4C1CC /* FontLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontLiterals.swift; sourceTree = "<group>"; };
+		83FA53FF2BF507DB00F4C1CC /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		83FA54012BF507EC00F4C1CC /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		83FA54032BF507FB00F4C1CC /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		83FA54052BF5081300F4C1CC /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		83FA54072BF5082300F4C1CC /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		83FA54092BF5084000F4C1CC /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		83FA540B2BF5085200F4C1CC /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		83FA540D2BF5086700F4C1CC /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		83FA54112BF5096C00F4C1CC /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		83FA54152BF5099F00F4C1CC /* HomeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIService.swift; sourceTree = "<group>"; };
+		83FA54172BF509BD00F4C1CC /* GetHomeResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeResponseDTO.swift; sourceTree = "<group>"; };
+		83FA541E2BF50A0B00F4C1CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		83FA54202BF50A2D00F4C1CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83FA54272BF50A9300F4C1CC /* Moya in Frameworks */,
+				83FA542D2BF50AAA00F4C1CC /* SnapKit in Frameworks */,
+				83FA542A2BF50A9F00F4C1CC /* Then in Frameworks */,
+				83FA54242BF50A6700F4C1CC /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,13 +92,149 @@
 		83FA53DC2BF5064200F4C1CC /* Sopkathon_iOS_Team4 */ = {
 			isa = PBXGroup;
 			children = (
-				83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */,
-				83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */,
-				83FA53E12BF5064200F4C1CC /* ViewController.swift */,
-				83FA53E62BF5064400F4C1CC /* Assets.xcassets */,
+				83FA53F42BF5076F00F4C1CC /* Application */,
+				83FA53F32BF5076A00F4C1CC /* Global */,
+				83FA53F22BF5076400F4C1CC /* Network */,
+				83FA53F12BF5075300F4C1CC /* Presentation */,
 				83FA53EB2BF5064400F4C1CC /* Info.plist */,
 			);
 			path = Sopkathon_iOS_Team4;
+			sourceTree = "<group>";
+		};
+		83FA53F12BF5075300F4C1CC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				83FA54192BF509CF00F4C1CC /* Home */,
+				83FA53E12BF5064200F4C1CC /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		83FA53F22BF5076400F4C1CC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				83FA54102BF5095700F4C1CC /* Base */,
+				83FA540F2BF5094D00F4C1CC /* Home */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		83FA53F32BF5076A00F4C1CC /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				83FA53F82BF5079800F4C1CC /* Extensions */,
+				83FA53F72BF5079300F4C1CC /* Literals */,
+				83FA53F62BF5078D00F4C1CC /* Protocols */,
+				83FA53F52BF5078500F4C1CC /* Resources */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		83FA53F42BF5076F00F4C1CC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */,
+				83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		83FA53F52BF5078500F4C1CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83FA53E62BF5064400F4C1CC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83FA53F62BF5078D00F4C1CC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				83FA53F92BF507BE00F4C1CC /* a.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		83FA53F72BF5079300F4C1CC /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				83FA53FB2BF507C500F4C1CC /* StringLiterals.swift */,
+				83FA53FD2BF507D200F4C1CC /* FontLiterals.swift */,
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+		83FA53F82BF5079800F4C1CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83FA53FF2BF507DB00F4C1CC /* NSObject+.swift */,
+				83FA54012BF507EC00F4C1CC /* UIStackView+.swift */,
+				83FA54032BF507FB00F4C1CC /* UIView+.swift */,
+				83FA54052BF5081300F4C1CC /* UITextField+.swift */,
+				83FA54072BF5082300F4C1CC /* UILabel+.swift */,
+				83FA54092BF5084000F4C1CC /* UIViewController+.swift */,
+				83FA540B2BF5085200F4C1CC /* UIButton+.swift */,
+				83FA540D2BF5086700F4C1CC /* UIImageView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83FA540F2BF5094D00F4C1CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83FA54142BF5099000F4C1CC /* DTO */,
+				83FA54132BF5098900F4C1CC /* Service */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		83FA54102BF5095700F4C1CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				83FA54112BF5096C00F4C1CC /* NetworkResult.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		83FA54132BF5098900F4C1CC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				83FA54152BF5099F00F4C1CC /* HomeAPIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		83FA54142BF5099000F4C1CC /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				83FA54172BF509BD00F4C1CC /* GetHomeResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		83FA54192BF509CF00F4C1CC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83FA541B2BF509EB00F4C1CC /* View */,
+				83FA541A2BF509E400F4C1CC /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		83FA541A2BF509E400F4C1CC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83FA541E2BF50A0B00F4C1CC /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		83FA541B2BF509EB00F4C1CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83FA54202BF50A2D00F4C1CC /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +253,12 @@
 			dependencies = (
 			);
 			name = Sopkathon_iOS_Team4;
+			packageProductDependencies = (
+				83FA54232BF50A6700F4C1CC /* Kingfisher */,
+				83FA54262BF50A9300F4C1CC /* Moya */,
+				83FA54292BF50A9F00F4C1CC /* Then */,
+				83FA542C2BF50AAA00F4C1CC /* SnapKit */,
+			);
 			productName = Sopkathon_iOS_Team4;
 			productReference = 83FA53DA2BF5064200F4C1CC /* Sopkathon_iOS_Team4.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +287,12 @@
 				Base,
 			);
 			mainGroup = 83FA53D12BF5064200F4C1CC;
+			packageReferences = (
+				83FA54222BF50A6700F4C1CC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				83FA54252BF50A9300F4C1CC /* XCRemoteSwiftPackageReference "Moya" */,
+				83FA54282BF50A9F00F4C1CC /* XCRemoteSwiftPackageReference "Then" */,
+				83FA542B2BF50AAA00F4C1CC /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 83FA53DB2BF5064200F4C1CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,8 +319,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				83FA53E22BF5064200F4C1CC /* ViewController.swift in Sources */,
+				83FA54062BF5081300F4C1CC /* UITextField+.swift in Sources */,
+				83FA540E2BF5086700F4C1CC /* UIImageView+.swift in Sources */,
+				83FA54162BF5099F00F4C1CC /* HomeAPIService.swift in Sources */,
+				83FA540A2BF5084000F4C1CC /* UIViewController+.swift in Sources */,
+				83FA541F2BF50A0B00F4C1CC /* HomeViewController.swift in Sources */,
+				83FA54182BF509BD00F4C1CC /* GetHomeResponseDTO.swift in Sources */,
+				83FA53FC2BF507C500F4C1CC /* StringLiterals.swift in Sources */,
+				83FA53FE2BF507D200F4C1CC /* FontLiterals.swift in Sources */,
+				83FA54122BF5096C00F4C1CC /* NetworkResult.swift in Sources */,
 				83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */,
+				83FA54002BF507DB00F4C1CC /* NSObject+.swift in Sources */,
+				83FA540C2BF5085200F4C1CC /* UIButton+.swift in Sources */,
 				83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */,
+				83FA54042BF507FB00F4C1CC /* UIView+.swift in Sources */,
+				83FA54082BF5082300F4C1CC /* UILabel+.swift in Sources */,
+				83FA53FA2BF507BE00F4C1CC /* a.swift in Sources */,
+				83FA54022BF507EC00F4C1CC /* UIStackView+.swift in Sources */,
+				83FA54212BF50A2D00F4C1CC /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +538,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83FA54222BF50A6700F4C1CC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+		83FA54252BF50A9300F4C1CC /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		83FA54282BF50A9F00F4C1CC /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		83FA542B2BF50AAA00F4C1CC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83FA54232BF50A6700F4C1CC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83FA54222BF50A6700F4C1CC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		83FA54262BF50A9300F4C1CC /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83FA54252BF50A9300F4C1CC /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		83FA54292BF50A9F00F4C1CC /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83FA54282BF50A9F00F4C1CC /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		83FA542C2BF50AAA00F4C1CC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83FA542B2BF50AAA00F4C1CC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83FA53D22BF5064200F4C1CC /* Project object */;
 }
