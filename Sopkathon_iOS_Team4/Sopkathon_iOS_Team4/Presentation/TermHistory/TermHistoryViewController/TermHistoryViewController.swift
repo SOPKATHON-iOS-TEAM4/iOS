@@ -12,8 +12,6 @@ import Then
 
 final class TermHistoryViewController: UIViewController {
     
-    // MARK: - Properties
-    
     // MARK: - UI Components
     
     let navigationBar = UINavigationBar().then{
@@ -107,8 +105,4 @@ extension TermHistoryViewController: UICollectionViewDelegate, UICollectionViewD
         else { return UICollectionViewCell() }
         return cell
     }
-//    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//            return CGSize(width: UIScreen.main.bounds.width, height: 97)
-//        }
 }
