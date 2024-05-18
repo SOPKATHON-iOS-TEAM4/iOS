@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21A3C1B52BF9078900034B32 /* CreateTermListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3C1B42BF9078900034B32 /* CreateTermListViewController.swift */; };
-		21A3C1B92BF907A900034B32 /* CreateTermListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3C1B82BF907A900034B32 /* CreateTermListView.swift */; };
-		21F57DC42BF916D400EDA711 /* AddTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DC32BF916D400EDA711 /* AddTermViewController.swift */; };
-		21F57DC62BF916EA00EDA711 /* AddTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DC52BF916EA00EDA711 /* AddTermView.swift */; };
-		21F57DCB2BF9239100EDA711 /* AddedTermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DCA2BF9239100EDA711 /* AddedTermCell.swift */; };
 		21F57DCE2BF9263100EDA711 /* AddedTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DCD2BF9263100EDA711 /* AddedTerm.swift */; };
 		83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */; };
 		83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */; };
@@ -47,16 +42,16 @@
 		83FA543C2BF50C3400F4C1CC /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543B2BF50C3400F4C1CC /* Pretendard-Thin.otf */; };
 		83FA543F2BF50D1D00F4C1CC /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543D2BF50D1D00F4C1CC /* Pretendard-Medium.otf */; };
 		83FA54402BF50D1D00F4C1CC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */; };
-		DC07798F2BF927BA008F7738 /* TermHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */; };
-		DC0779912BF927D0008F7738 /* TermHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0779902BF927D0008F7738 /* TermHistoryCollectionViewCell.swift */; };
+		88C4F2542BF93BAD00633D79 /* CreateTermListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F2482BF93BAD00633D79 /* CreateTermListView.swift */; };
+		88C4F2552BF93BAD00633D79 /* CreateTermListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F24A2BF93BAD00633D79 /* CreateTermListViewController.swift */; };
+		88C4F2562BF93BAD00633D79 /* AddedTermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F24D2BF93BAD00633D79 /* AddedTermCell.swift */; };
+		88C4F2572BF93BAD00633D79 /* AddTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F24F2BF93BAD00633D79 /* AddTermView.swift */; };
+		88C4F2582BF93BAD00633D79 /* AddTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F2512BF93BAD00633D79 /* AddTermViewController.swift */; };
+		88C4F25E2BF93BB300633D79 /* TermHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F2592BF93BB200633D79 /* TermHistoryCollectionViewCell.swift */; };
+		88C4F25F2BF93BB300633D79 /* TermHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F25B2BF93BB200633D79 /* TermHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		21A3C1B42BF9078900034B32 /* CreateTermListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTermListViewController.swift; sourceTree = "<group>"; };
-		21A3C1B82BF907A900034B32 /* CreateTermListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTermListView.swift; sourceTree = "<group>"; };
-		21F57DC32BF916D400EDA711 /* AddTermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTermViewController.swift; sourceTree = "<group>"; };
-		21F57DC52BF916EA00EDA711 /* AddTermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTermView.swift; sourceTree = "<group>"; };
-		21F57DCA2BF9239100EDA711 /* AddedTermCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedTermCell.swift; sourceTree = "<group>"; };
 		21F57DCD2BF9263100EDA711 /* AddedTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedTerm.swift; sourceTree = "<group>"; };
 		83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		83FA53DA2BF5064200F4C1CC /* Sopkathon_iOS_Team4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopkathon_iOS_Team4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,8 +85,13 @@
 		83FA543B2BF50C3400F4C1CC /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		83FA543D2BF50D1D00F4C1CC /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermHistoryViewController.swift; sourceTree = "<group>"; };
-		DC0779902BF927D0008F7738 /* TermHistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermHistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		88C4F2482BF93BAD00633D79 /* CreateTermListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTermListView.swift; sourceTree = "<group>"; };
+		88C4F24A2BF93BAD00633D79 /* CreateTermListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTermListViewController.swift; sourceTree = "<group>"; };
+		88C4F24D2BF93BAD00633D79 /* AddedTermCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedTermCell.swift; sourceTree = "<group>"; };
+		88C4F24F2BF93BAD00633D79 /* AddTermView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTermView.swift; sourceTree = "<group>"; };
+		88C4F2512BF93BAD00633D79 /* AddTermViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTermViewController.swift; sourceTree = "<group>"; };
+		88C4F2592BF93BB200633D79 /* TermHistoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermHistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		88C4F25B2BF93BB200633D79 /* TermHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,65 +109,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21A3C1B62BF9078E00034B32 /* CreateTermList */ = {
-			isa = PBXGroup;
-			children = (
-				21A3C1B72BF9079900034B32 /* ViewController */,
-				21A3C1BA2BF907AC00034B32 /* View */,
-			);
-			path = CreateTermList;
-			sourceTree = "<group>";
-		};
-		21A3C1B72BF9079900034B32 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				21A3C1B42BF9078900034B32 /* CreateTermListViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		21A3C1BA2BF907AC00034B32 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				21A3C1B82BF907A900034B32 /* CreateTermListView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		21F57DC72BF916F200EDA711 /* AddTerm */ = {
-			isa = PBXGroup;
-			children = (
-				21F57DC82BF9173300EDA711 /* ViewController */,
-				21F57DC92BF9173B00EDA711 /* View */,
-				21F57DCC2BF9239600EDA711 /* Cell */,
-			);
-			path = AddTerm;
-			sourceTree = "<group>";
-		};
-		21F57DC82BF9173300EDA711 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				21F57DC32BF916D400EDA711 /* AddTermViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		21F57DC92BF9173B00EDA711 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				21F57DC52BF916EA00EDA711 /* AddTermView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		21F57DCC2BF9239600EDA711 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				21F57DCA2BF9239100EDA711 /* AddedTermCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		83FA53D12BF5064200F4C1CC = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +140,9 @@
 		83FA53F12BF5075300F4C1CC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				88C4F25D2BF93BB200633D79 /* TermHistory */,
+				88C4F2532BF93BAD00633D79 /* AddTerm */,
+				88C4F24C2BF93BAD00633D79 /* CreateTermList */,
 				83FA54192BF509CF00F4C1CC /* Home */,
 				83FA53E12BF5064200F4C1CC /* ViewController.swift */,
 			);
@@ -351,29 +295,88 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		DC07798B2BF92798008F7738 /* TermHistory */ = {
+		88C4F2492BF93BAD00633D79 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DC07798C2BF927A0008F7738 /* Cell */,
-				DC07798D2BF927B1008F7738 /* TermHistoryViewController */,
+				88C4F2482BF93BAD00633D79 /* CreateTermListView.swift */,
 			);
-			path = TermHistory;
+			path = View;
 			sourceTree = "<group>";
 		};
-		DC07798C2BF927A0008F7738 /* Cell */ = {
+		88C4F24B2BF93BAD00633D79 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DC0779902BF927D0008F7738 /* TermHistoryCollectionViewCell.swift */,
+				88C4F24A2BF93BAD00633D79 /* CreateTermListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		88C4F24C2BF93BAD00633D79 /* CreateTermList */ = {
+			isa = PBXGroup;
+			children = (
+				88C4F2492BF93BAD00633D79 /* View */,
+				88C4F24B2BF93BAD00633D79 /* ViewController */,
+			);
+			path = CreateTermList;
+			sourceTree = "<group>";
+		};
+		88C4F24E2BF93BAD00633D79 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				88C4F24D2BF93BAD00633D79 /* AddedTermCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		DC07798D2BF927B1008F7738 /* TermHistoryViewController */ = {
+		88C4F2502BF93BAD00633D79 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */,
+				88C4F24F2BF93BAD00633D79 /* AddTermView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88C4F2522BF93BAD00633D79 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88C4F2512BF93BAD00633D79 /* AddTermViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		88C4F2532BF93BAD00633D79 /* AddTerm */ = {
+			isa = PBXGroup;
+			children = (
+				88C4F24E2BF93BAD00633D79 /* Cell */,
+				88C4F2502BF93BAD00633D79 /* View */,
+				88C4F2522BF93BAD00633D79 /* ViewController */,
+			);
+			path = AddTerm;
+			sourceTree = "<group>";
+		};
+		88C4F25A2BF93BB200633D79 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				88C4F2592BF93BB200633D79 /* TermHistoryCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		88C4F25C2BF93BB200633D79 /* TermHistoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88C4F25B2BF93BB200633D79 /* TermHistoryViewController.swift */,
 			);
 			path = TermHistoryViewController;
+			sourceTree = "<group>";
+		};
+		88C4F25D2BF93BB200633D79 /* TermHistory */ = {
+			isa = PBXGroup;
+			children = (
+				88C4F25A2BF93BB200633D79 /* Cell */,
+				88C4F25C2BF93BB200633D79 /* TermHistoryViewController */,
+			);
+			path = TermHistory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,34 +469,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21F57DC62BF916EA00EDA711 /* AddTermView.swift in Sources */,
-				21F57DC42BF916D400EDA711 /* AddTermViewController.swift in Sources */,
+				88C4F2582BF93BAD00633D79 /* AddTermViewController.swift in Sources */,
+				88C4F2562BF93BAD00633D79 /* AddedTermCell.swift in Sources */,
 				83FA53E22BF5064200F4C1CC /* ViewController.swift in Sources */,
 				83FA54062BF5081300F4C1CC /* UITextField+.swift in Sources */,
 				83FA540E2BF5086700F4C1CC /* UIImageView+.swift in Sources */,
 				83FA54162BF5099F00F4C1CC /* HomeAPIService.swift in Sources */,
 				83FA540A2BF5084000F4C1CC /* UIViewController+.swift in Sources */,
+				88C4F2572BF93BAD00633D79 /* AddTermView.swift in Sources */,
 				83FA541F2BF50A0B00F4C1CC /* HomeViewController.swift in Sources */,
 				21F57DCE2BF9263100EDA711 /* AddedTerm.swift in Sources */,
+				88C4F2542BF93BAD00633D79 /* CreateTermListView.swift in Sources */,
 				83FA54182BF509BD00F4C1CC /* GetHomeResponseDTO.swift in Sources */,
 				83FA53FC2BF507C500F4C1CC /* StringLiterals.swift in Sources */,
 				83FA53FE2BF507D200F4C1CC /* FontLiterals.swift in Sources */,
+				88C4F25F2BF93BB300633D79 /* TermHistoryViewController.swift in Sources */,
 				83FA54122BF5096C00F4C1CC /* NetworkResult.swift in Sources */,
+				88C4F2552BF93BAD00633D79 /* CreateTermListViewController.swift in Sources */,
 				83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */,
-				21F57DCB2BF9239100EDA711 /* AddedTermCell.swift in Sources */,
 				83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */,
 				83FA54002BF507DB00F4C1CC /* NSObject+.swift in Sources */,
 				83FA540C2BF5085200F4C1CC /* UIButton+.swift in Sources */,
 				83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */,
 				83FA54042BF507FB00F4C1CC /* UIView+.swift in Sources */,
-				DC07798F2BF927BA008F7738 /* TermHistoryViewController.swift in Sources */,
 				83FA54082BF5082300F4C1CC /* UILabel+.swift in Sources */,
 				83FA53FA2BF507BE00F4C1CC /* a.swift in Sources */,
-				21A3C1B92BF907A900034B32 /* CreateTermListView.swift in Sources */,
+				88C4F25E2BF93BB300633D79 /* TermHistoryCollectionViewCell.swift in Sources */,
 				83FA54022BF507EC00F4C1CC /* UIStackView+.swift in Sources */,
 				83FA54212BF50A2D00F4C1CC /* HomeView.swift in Sources */,
-				21A3C1B52BF9078900034B32 /* CreateTermListViewController.swift in Sources */,
-				DC0779912BF927D0008F7738 /* TermHistoryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
