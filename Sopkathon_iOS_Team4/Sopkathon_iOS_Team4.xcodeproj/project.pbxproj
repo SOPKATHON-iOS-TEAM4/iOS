@@ -44,8 +44,8 @@
 		83FA54402BF50D1D00F4C1CC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */; };
 		882004AA2BF91FD2009883A0 /* TermDetailToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882004A92BF91FD2009883A0 /* TermDetailToastView.swift */; };
 		8848D7EF2BF94883008284BF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7EE2BF94883008284BF /* APIService.swift */; };
-		8848D7F22BF94CB1008284BF /* PostCategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7F12BF94CB1008284BF /* PostCategoryDTO.swift */; };
-		8848D7F42BF94D3E008284BF /* PostNewTermDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7F32BF94D3E008284BF /* PostNewTermDTO.swift */; };
+		8848D7F22BF94CB1008284BF /* En_PostCategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7F12BF94CB1008284BF /* En_PostCategoryDTO.swift */; };
+		8848D7F42BF94D3E008284BF /* En_PostNewTermDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7F32BF94D3E008284BF /* En_PostNewTermDTO.swift */; };
 		8848D7F62BF94E36008284BF /* BaseResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7F52BF94E36008284BF /* BaseResponseDTO.swift */; };
 		8848D7F92BF94EC3008284BF /* GetCategoryListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7F82BF94EC3008284BF /* GetCategoryListDTO.swift */; };
 		8848D7FD2BF94FE5008284BF /* GetTermListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7FC2BF94FE5008284BF /* GetTermListDTO.swift */; };
@@ -101,8 +101,8 @@
 		83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		882004A92BF91FD2009883A0 /* TermDetailToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermDetailToastView.swift; sourceTree = "<group>"; };
 		8848D7EE2BF94883008284BF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		8848D7F12BF94CB1008284BF /* PostCategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCategoryDTO.swift; sourceTree = "<group>"; };
-		8848D7F32BF94D3E008284BF /* PostNewTermDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNewTermDTO.swift; sourceTree = "<group>"; };
+		8848D7F12BF94CB1008284BF /* En_PostCategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = En_PostCategoryDTO.swift; sourceTree = "<group>"; };
+		8848D7F32BF94D3E008284BF /* En_PostNewTermDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = En_PostNewTermDTO.swift; sourceTree = "<group>"; };
 		8848D7F52BF94E36008284BF /* BaseResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseDTO.swift; sourceTree = "<group>"; };
 		8848D7F82BF94EC3008284BF /* GetCategoryListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCategoryListDTO.swift; sourceTree = "<group>"; };
 		8848D7FC2BF94FE5008284BF /* GetTermListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTermListDTO.swift; sourceTree = "<group>"; };
@@ -331,8 +331,8 @@
 		8848D7F02BF94C96008284BF /* Encodable */ = {
 			isa = PBXGroup;
 			children = (
-				8848D7F12BF94CB1008284BF /* PostCategoryDTO.swift */,
-				8848D7F32BF94D3E008284BF /* PostNewTermDTO.swift */,
+				8848D7F12BF94CB1008284BF /* En_PostCategoryDTO.swift */,
+				8848D7F32BF94D3E008284BF /* En_PostNewTermDTO.swift */,
 			);
 			path = Encodable;
 			sourceTree = "<group>";
@@ -588,10 +588,10 @@
 				83FA54002BF507DB00F4C1CC /* NSObject+.swift in Sources */,
 				83FA540C2BF5085200F4C1CC /* UIButton+.swift in Sources */,
 				8848D7F62BF94E36008284BF /* BaseResponseDTO.swift in Sources */,
-				8848D7F22BF94CB1008284BF /* PostCategoryDTO.swift in Sources */,
+				8848D7F22BF94CB1008284BF /* En_PostCategoryDTO.swift in Sources */,
 				83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */,
 				8848D7FD2BF94FE5008284BF /* GetTermListDTO.swift in Sources */,
-				8848D7F42BF94D3E008284BF /* PostNewTermDTO.swift in Sources */,
+				8848D7F42BF94D3E008284BF /* En_PostNewTermDTO.swift in Sources */,
 				88D000452BF90EAB00C26AA9 /* TermListDetailView.swift in Sources */,
 				83FA54042BF507FB00F4C1CC /* UIView+.swift in Sources */,
 				83FA54082BF5082300F4C1CC /* UILabel+.swift in Sources */,
