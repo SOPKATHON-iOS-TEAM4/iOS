@@ -7,35 +7,23 @@
 
 import UIKit
 
-extension UIFont {
-    static func pretendardFont(weight: CGFloat, size: CGFloat) -> UIFont {
-            let fontName: String
-            switch weight {
-                case 100:
-                    fontName = "Pretendard-Thin"
-                case 200:
-                    fontName = "Pretendard-ExtraLight"
-                case 300:
-                    fontName = "Pretendard-Light"
-                case 400:
-                    fontName = "Pretendard-Regular"
-                case 500:
-                    fontName = "Pretendard-Medium"
-                case 600:
-                    fontName = "Pretendard-SemiBold"
-                case 700:
-                    fontName = "Pretendard-Bold"
-                case 800:
-                    fontName = "Pretendard-ExtraBold"
-                case 900:
-                    fontName = "Pretendard-Black"
-                default:
-                    fatalError("Invalid weight")
-            }
-            
-            guard let font = UIFont(name: fontName, size: size) else {
-                fatalError("Font not found")
-            }
-            return font
-        }
+enum FontName: String {
+    case pretendardBold = "Pretendard-Bold"
+    case pretendardSemiBold = "Pretendard-SemiBold"
+    case pretendardMedium = "Pretendard-Medium"
 }
+
+extension UIFont {
+    @nonobjc class func pretendardBold(size: CGFloat) -> UIFont {
+        return UIFont(name: FontName.pretendardBold.rawValue, size: size)!
+    }
+    
+    @nonobjc class func pretendardSemiBold(size: CGFloat) -> UIFont {
+        return UIFont(name: FontName.pretendardSemiBold.rawValue, size: size)!
+    }
+    
+    @nonobjc class func pretendardMedium(size: CGFloat) -> UIFont {
+        return UIFont(name: FontName.pretendardMedium.rawValue, size: size)!
+    }
+}
+
