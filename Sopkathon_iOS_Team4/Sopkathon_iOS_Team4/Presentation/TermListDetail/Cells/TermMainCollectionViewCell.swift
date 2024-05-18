@@ -50,7 +50,7 @@ final class TermMainCollectionlViewCell: UICollectionViewCell {
 private extension TermMainCollectionlViewCell {
     func setupStyle() {
         backView.do {
-            $0.backgroundColor = .blue
+            $0.backgroundColor = .main50
         }
         
         termLabel.do {
