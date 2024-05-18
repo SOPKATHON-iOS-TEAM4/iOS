@@ -170,6 +170,7 @@
 			children = (
 				83FA54102BF5095700F4C1CC /* Base */,
 				83FA540F2BF5094D00F4C1CC /* Home */,
+				DC735E892BF9375B00A73C49 /* TermHistory */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -333,6 +334,13 @@
 				DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */,
 			);
 			path = TermHistoryViewController;
+			sourceTree = "<group>";
+		};
+		DC735E892BF9375B00A73C49 /* TermHistory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TermHistory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
