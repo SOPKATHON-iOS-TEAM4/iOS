@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+//        getTermList(categoryId: 1)
+//        getTermInfo(categoryId: 1, wordId: 1)
     }
     
     func getCategoryList() {
