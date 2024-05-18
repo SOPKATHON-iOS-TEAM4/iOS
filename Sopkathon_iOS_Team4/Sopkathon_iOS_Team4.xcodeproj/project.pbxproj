@@ -11,6 +11,8 @@
 		21A3C1B92BF907A900034B32 /* CreateTermListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3C1B82BF907A900034B32 /* CreateTermListView.swift */; };
 		21F57DC42BF916D400EDA711 /* AddTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DC32BF916D400EDA711 /* AddTermViewController.swift */; };
 		21F57DC62BF916EA00EDA711 /* AddTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DC52BF916EA00EDA711 /* AddTermView.swift */; };
+		21F57DCB2BF9239100EDA711 /* AddedTermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DCA2BF9239100EDA711 /* AddedTermCell.swift */; };
+		21F57DCE2BF9263100EDA711 /* AddedTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DCD2BF9263100EDA711 /* AddedTerm.swift */; };
 		83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */; };
 		83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */; };
 		83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */; };
@@ -52,6 +54,8 @@
 		21A3C1B82BF907A900034B32 /* CreateTermListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTermListView.swift; sourceTree = "<group>"; };
 		21F57DC32BF916D400EDA711 /* AddTermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTermViewController.swift; sourceTree = "<group>"; };
 		21F57DC52BF916EA00EDA711 /* AddTermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTermView.swift; sourceTree = "<group>"; };
+		21F57DCA2BF9239100EDA711 /* AddedTermCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedTermCell.swift; sourceTree = "<group>"; };
+		21F57DCD2BF9263100EDA711 /* AddedTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedTerm.swift; sourceTree = "<group>"; };
 		83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		83FA53DA2BF5064200F4C1CC /* Sopkathon_iOS_Team4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopkathon_iOS_Team4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			children = (
 				21F57DC82BF9173300EDA711 /* ViewController */,
 				21F57DC92BF9173B00EDA711 /* View */,
+				21F57DCC2BF9239600EDA711 /* Cell */,
 			);
 			path = AddTerm;
 			sourceTree = "<group>";
@@ -149,6 +154,14 @@
 				21F57DC52BF916EA00EDA711 /* AddTermView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		21F57DCC2BF9239600EDA711 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				21F57DCA2BF9239100EDA711 /* AddedTermCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		83FA53D12BF5064200F4C1CC = {
@@ -290,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				83FA54172BF509BD00F4C1CC /* GetHomeResponseDTO.swift */,
+				21F57DCD2BF9263100EDA711 /* AddedTerm.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -433,11 +447,13 @@
 				83FA54162BF5099F00F4C1CC /* HomeAPIService.swift in Sources */,
 				83FA540A2BF5084000F4C1CC /* UIViewController+.swift in Sources */,
 				83FA541F2BF50A0B00F4C1CC /* HomeViewController.swift in Sources */,
+				21F57DCE2BF9263100EDA711 /* AddedTerm.swift in Sources */,
 				83FA54182BF509BD00F4C1CC /* GetHomeResponseDTO.swift in Sources */,
 				83FA53FC2BF507C500F4C1CC /* StringLiterals.swift in Sources */,
 				83FA53FE2BF507D200F4C1CC /* FontLiterals.swift in Sources */,
 				83FA54122BF5096C00F4C1CC /* NetworkResult.swift in Sources */,
 				83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */,
+				21F57DCB2BF9239100EDA711 /* AddedTermCell.swift in Sources */,
 				83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */,
 				83FA54002BF507DB00F4C1CC /* NSObject+.swift in Sources */,
 				83FA540C2BF5085200F4C1CC /* UIButton+.swift in Sources */,

@@ -12,6 +12,10 @@ import SnapKit
 
 final class AddTermView: UIView {
     
+    enum Section {
+        case main
+    }
+    
     // MARK: - UI Properties
     
     private let termLabel = UILabel()
@@ -30,7 +34,15 @@ final class AddTermView: UIView {
     
     private let numOfTermMeaningLabel = UILabel()
     
+    private let addedTermCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
     private lazy var confirmButton = UIButton()
+    
+    // MARK: - Properties
+    
+    private var dataSource: UICollectionViewDiffableDataSource<Section, AddedTerm>!
+    
+    private let addedTermList = AddedTerm.list
 
     // MARK: - Initializer
     
@@ -111,6 +123,12 @@ final class AddTermView: UIView {
             $0.textColor = .grayscale60
         }
         
+        addedTermCollectionView.do {
+            $0.register(AddedTermCell.self, forCellWithReuseIdentifier: AddedTermCell.className)
+            $0.backgroundColor = .none
+            $0.showsHorizontalScrollIndicator = false
+        }
+        
         confirmButton.do {
             let attrStr = NSAttributedString(
                             string: "확인",
@@ -134,6 +152,7 @@ final class AddTermView: UIView {
             addTermMeaningButton,
             numOfTermLabel,
             numOfTermMeaningLabel,
+            addedTermCollectionView,
             confirmButton
         ].forEach { self.addSubviews($0) }
     }
@@ -185,10 +204,63 @@ final class AddTermView: UIView {
             $0.trailing.equalTo(termMeaningTextField).offset(-6)
         }
         
+        addedTermCollectionView.snp.makeConstraints {
+            $0.top.equalTo(termMeaningTextField).offset(296)
+            $0.horizontalEdges.equalToSuperview().inset(24)
+            $0.height.equalTo(35)
+        }
+        
         confirmButton.snp.makeConstraints {
             $0.horizontalEdges.equalToSuperview().inset(24)
             $0.bottom.equalTo(safeAreaLayoutGuide).offset(-22)
             $0.height.equalTo(56)
         }
+    }
+}
+
+// MARK: - UICollectionView Setting
+
+extension AddTermView {
+    func configureCollectionView() {
+        dataSource = UICollectionViewDiffableDataSource(
+            collectionView: addedTermCollectionView,
+            cellProvider: { collectionView, indexPath, item in
+                guard let cell = collectionView.dequeueReusableCell(
+                    withReuseIdentifier: AddedTermCell.className,
+                    for: indexPath) as? AddedTermCell
+                else {
+                    return nil
+                }
+                
+                cell.dataBind(item)
+                return cell
+            })
+        
+        putsnapshotData()
+        
+        addedTermCollectionView.collectionViewLayout = setCollectionViewLayout()
+    }
+    
+    func putsnapshotData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Section, AddedTerm>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(addedTermList, toSection: .main)
+        dataSource.apply(snapshot)
+    }
+    
+    func setCollectionViewLayout() -> UICollectionViewLayout {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .estimated(80), heightDimension: .absolute(32))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .estimated(80), heightDimension: .fractionalHeight(1.0))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .continuous
+        section.interGroupSpacing = 10
+        
+        let layout = UICollectionViewCompositionalLayout(section: section)
+        
+        return layout
     }
 }

@@ -18,6 +18,10 @@ final class AddTermViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        rootView.configureCollectionView()
+    }
+    
+    override func loadView() {
         view = rootView
     }
     
