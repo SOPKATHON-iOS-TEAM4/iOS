@@ -14,14 +14,14 @@ final class CreateTermListView: UIView {
     
     // MARK: - UI Properties
     
+    let termListTextField = UITextField()
+    
+    let numOfTermListLabel = UILabel()
+    
+    let createButton = UIButton()
+    
     private let termTitleLabel = UILabel()
     
-    private let termListTextField = UITextField()
-    
-    private let numOfTermListLabel = UILabel()
-    
-    private let createButton = UIButton()
-
     // MARK: - Initializer
     
     override init(frame: CGRect) {
@@ -52,6 +52,7 @@ final class CreateTermListView: UIView {
             $0.addPadding(left: 16, right: 16)
             $0.changePlaceholderColor(forPlaceHolder: "제목을 입력해주세요", forColor: .grayscale50)
             $0.makeRounded(radius: 15)
+            $0.textColor = .white
         }
         
         numOfTermListLabel.do {
@@ -61,10 +62,11 @@ final class CreateTermListView: UIView {
         }
         
         createButton.do {
-            $0.setBackgroundColor(.white, for: .normal)
+            $0.setBackgroundColor(.grayscale50, for: .normal)
             $0.setTitle("만들기", for: .normal)
             $0.setTitleColor(.grayscale90, for: .normal)
             $0.makeRounded(radius: 10)
+            $0.isEnabled = false
         }
     }
     

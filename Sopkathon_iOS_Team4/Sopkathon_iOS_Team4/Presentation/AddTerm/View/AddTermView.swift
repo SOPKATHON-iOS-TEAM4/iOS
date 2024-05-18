@@ -18,27 +18,27 @@ final class AddTermView: UIView {
     
     // MARK: - UI Properties
     
+    let termTextField = UITextField()
+    
+    let numOfTermLabel = UILabel()
+    
+    let termMeaningTextField = UITextField()
+    
+    let numOfTermMeaningLabel = UILabel()
+    
+    lazy var confirmButton = UIButton()
+    
+    let addedTermCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
     private let termLabel = UILabel()
-    
-    private let termTextField = UITextField()
-    
-    private let numOfTermLabel = UILabel()
     
     private let termMeaningLabel = UILabel()
     
-    private let termMeaningTextField = UITextField()
-    
-    private let numOfTermMeaningLabel = UILabel()
-    
-    private let addedTermCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-    
-    private lazy var confirmButton = UIButton()
-    
     // MARK: - Properties
     
-    private var dataSource: UICollectionViewDiffableDataSource<Section, AddedTerm>!
+    var addedTermList = AddedTerm.list 
     
-    private let addedTermList = AddedTerm.list
+    private var dataSource: UICollectionViewDiffableDataSource<Section, AddedTerm>!
 
     // MARK: - Initializer
     
@@ -68,6 +68,7 @@ final class AddTermView: UIView {
             $0.addPadding(left: 16, right: 16)
             $0.changePlaceholderColor(forPlaceHolder: "단어를 입력해주세요", forColor: .grayscale50)
             $0.makeRounded(radius: 15)
+            $0.textColor = .white0
         }
         
         numOfTermLabel.do {
@@ -87,6 +88,7 @@ final class AddTermView: UIView {
             $0.addPadding(left: 16, right: 16)
             $0.changePlaceholderColor(forPlaceHolder: "단어의 뜻을 입력해주세요", forColor: .grayscale50)
             $0.makeRounded(radius: 15)
+            $0.textColor = .white0
         }
         
         numOfTermMeaningLabel.do {
@@ -188,6 +190,7 @@ extension AddTermView {
                     return nil
                 }
                 
+                cell.delegate = self
                 cell.dataBind(item)
                 return cell
             })
@@ -218,5 +221,14 @@ extension AddTermView {
         let layout = UICollectionViewCompositionalLayout(section: section)
         
         return layout
+    }
+}
+
+extension AddTermView: AddedTermCellDelegate {
+    func didTapDeleteButton(in cell: AddedTermCell) {
+        guard let indexPath = addedTermCollectionView.indexPath(for: cell) else { return }
+        addedTermList.remove(at: indexPath.item)
+        putsnapshotData()
+        
     }
 }
