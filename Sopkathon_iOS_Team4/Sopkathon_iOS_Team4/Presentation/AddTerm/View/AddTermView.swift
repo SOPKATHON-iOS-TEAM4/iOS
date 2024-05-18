@@ -18,21 +18,21 @@ final class AddTermView: UIView {
     
     // MARK: - UI Properties
     
+    let termTextField = UITextField()
+    
+    let numOfTermLabel = UILabel()
+    
+    let termMeaningTextField = UITextField()
+    
+    let numOfTermMeaningLabel = UILabel()
+    
+    lazy var confirmButton = UIButton()
+    
     private let termLabel = UILabel()
-    
-    private let termTextField = UITextField()
-    
-    private let numOfTermLabel = UILabel()
     
     private let termMeaningLabel = UILabel()
     
-    private let termMeaningTextField = UITextField()
-    
-    private let numOfTermMeaningLabel = UILabel()
-    
     private let addedTermCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-    
-    private lazy var confirmButton = UIButton()
     
     // MARK: - Properties
     
@@ -68,6 +68,7 @@ final class AddTermView: UIView {
             $0.addPadding(left: 16, right: 16)
             $0.changePlaceholderColor(forPlaceHolder: "단어를 입력해주세요", forColor: .grayscale50)
             $0.makeRounded(radius: 15)
+            $0.textColor = .white0
         }
         
         numOfTermLabel.do {
@@ -87,6 +88,7 @@ final class AddTermView: UIView {
             $0.addPadding(left: 16, right: 16)
             $0.changePlaceholderColor(forPlaceHolder: "단어의 뜻을 입력해주세요", forColor: .grayscale50)
             $0.makeRounded(radius: 15)
+            $0.textColor = .white0
         }
         
         numOfTermMeaningLabel.do {
