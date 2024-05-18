@@ -31,12 +31,19 @@ final class AddTermViewController: UIViewController {
         super.viewDidLoad()
         
         rootView.configureCollectionView()
+        setInitial()
         setTextField()
         setButtonAction()
     }
     
     override func loadView() {
         view = rootView
+    }
+    
+    // MARK: - Initial Setting
+    
+    private func setInitial() {
+        title = "단어 추가"
     }
     
     // MARK: - TextField  Setting

@@ -26,6 +26,7 @@ final class CreateTermListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setInitial()
         setTextField()
         setButtonAction()
     }
@@ -33,6 +34,13 @@ final class CreateTermListViewController: UIViewController {
     override func loadView() {
         view = rootView
     }
+    
+    // MARK: - Initial Setting
+    
+    private func setInitial() {
+        title = "단어장 추가"
+    }
+    
     
     // MARK: - TextField  Setting
     
