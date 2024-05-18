@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		21A3C1B52BF9078900034B32 /* CreateTermListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3C1B42BF9078900034B32 /* CreateTermListViewController.swift */; };
 		21A3C1B92BF907A900034B32 /* CreateTermListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3C1B82BF907A900034B32 /* CreateTermListView.swift */; };
+		21F57DC42BF916D400EDA711 /* AddTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DC32BF916D400EDA711 /* AddTermViewController.swift */; };
+		21F57DC62BF916EA00EDA711 /* AddTermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DC52BF916EA00EDA711 /* AddTermView.swift */; };
 		83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */; };
 		83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */; };
 		83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		21A3C1B42BF9078900034B32 /* CreateTermListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTermListViewController.swift; sourceTree = "<group>"; };
 		21A3C1B82BF907A900034B32 /* CreateTermListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTermListView.swift; sourceTree = "<group>"; };
+		21F57DC32BF916D400EDA711 /* AddTermViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTermViewController.swift; sourceTree = "<group>"; };
+		21F57DC52BF916EA00EDA711 /* AddTermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTermView.swift; sourceTree = "<group>"; };
 		83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		83FA53DA2BF5064200F4C1CC /* Sopkathon_iOS_Team4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopkathon_iOS_Team4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		21F57DC72BF916F200EDA711 /* AddTerm */ = {
+			isa = PBXGroup;
+			children = (
+				21F57DC82BF9173300EDA711 /* ViewController */,
+				21F57DC92BF9173B00EDA711 /* View */,
+			);
+			path = AddTerm;
+			sourceTree = "<group>";
+		};
+		21F57DC82BF9173300EDA711 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				21F57DC32BF916D400EDA711 /* AddTermViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		21F57DC92BF9173B00EDA711 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21F57DC52BF916EA00EDA711 /* AddTermView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		83FA53D12BF5064200F4C1CC = {
 			isa = PBXGroup;
 			children = (
@@ -153,9 +182,10 @@
 		83FA53F12BF5075300F4C1CC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				21A3C1B62BF9078E00034B32 /* CreateTermList */,
+				21F57DC72BF916F200EDA711 /* AddTerm */,
 				83FA54192BF509CF00F4C1CC /* Home */,
 				83FA53E12BF5064200F4C1CC /* ViewController.swift */,
-				21A3C1B62BF9078E00034B32 /* CreateTermList */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -395,6 +425,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F57DC62BF916EA00EDA711 /* AddTermView.swift in Sources */,
+				21F57DC42BF916D400EDA711 /* AddTermViewController.swift in Sources */,
 				83FA53E22BF5064200F4C1CC /* ViewController.swift in Sources */,
 				83FA54062BF5081300F4C1CC /* UITextField+.swift in Sources */,
 				83FA540E2BF5086700F4C1CC /* UIImageView+.swift in Sources */,
