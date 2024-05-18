@@ -12,16 +12,17 @@ import Then
 
 struct TermModel {
     let termId: Int
-    let termContent: String
+    let termContentEng: String
+    let termContentKor: String
+    let termCount: Int
 }
 
 final class TermMainCollectionlViewCell: UICollectionViewCell {
     
     // MARK: - Properties
-    
+    private var cellModel: TermModel?
     
     // MARK: - UI Components
-    
     // MARK: - Life Cycles
     
     override init(frame: CGRect) {
