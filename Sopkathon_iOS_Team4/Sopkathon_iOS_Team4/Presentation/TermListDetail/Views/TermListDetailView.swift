@@ -19,9 +19,9 @@ final class TermListDetailView: UIView {
     
     private let cvBackgroundView = UIView()
     
-    private let termMainCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout().then {
+    let termMainCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout().then {
         
-        $0.itemSize = CGSize(width: 70, height: 30)
+        $0.itemSize = CGSize(width: 70, height: 70)
         
         $0.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
@@ -64,10 +64,11 @@ private extension TermListDetailView {
         
         countLabelBackgroundView.do {
             $0.backgroundColor = .grayscale70
-            $0.makeRounded(radius: 20)
+            $0.makeRounded(radius: 2)
         }
         
         termListCount.do {
+            $0.text = "0/10"
             $0.font = .pretendardMedium(size: 16)
             $0.textColor = .grayscale50
         }
@@ -95,16 +96,14 @@ private extension TermListDetailView {
         }
         
         termListCount.snp.makeConstraints {
-            $0.top.equalTo(cvBackgroundView).offset(35)
+            $0.top.equalTo(termMainCollectionView.snp.bottom).offset(35)
             $0.centerX.equalToSuperview()
         }
         
         countLabelBackgroundView.snp.makeConstraints {
-            $0.center.equalTo(countLabelBackgroundView)
-            $0.leading.equalTo(termListCount).inset(15)
-            $0.trailing.equalTo(termListCount).inset(-15)
-            $0.top.equalTo(termListCount).inset(9)
-            $0.bottom.equalTo(termListCount).inset(-9)
+            $0.center.equalTo(termListCount)
+            $0.width.equalTo(termListCount).multipliedBy(1.5)
+            $0.height.equalTo(termListCount).multipliedBy(1.5)
         }
         
     }
