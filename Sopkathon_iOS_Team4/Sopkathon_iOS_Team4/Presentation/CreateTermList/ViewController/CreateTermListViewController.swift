@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateTermListViewController: UIViewController {
+final class CreateTermListViewController: UIViewController {
     
     // MARK: - Properties
     

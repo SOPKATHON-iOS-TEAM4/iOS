@@ -10,7 +10,7 @@ import UIKit
 import Then
 import SnapKit
 
-class CreateTermListView: UIView {
+final class CreateTermListView: UIView {
     
     // MARK: - UI Properties
     
@@ -91,7 +91,7 @@ class CreateTermListView: UIView {
         }
         
         createButton.snp.makeConstraints {
-            $0.leading.trailing.equalToSuperview().inset(24)
+            $0.horizontalEdges.equalToSuperview().inset(24)
             $0.bottom.equalTo(safeAreaLayoutGuide).offset(-22)
             $0.height.equalTo(56)
         }
