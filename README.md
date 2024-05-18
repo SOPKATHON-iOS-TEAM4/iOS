@@ -22,6 +22,12 @@
 | <p align = "center">온보딩 / 카테고리 | <p align = "center"> 단어 입력 | <p align = "center"> 단어 암기 | <p align = "center"> 단어 확인 |
 
 
+
+https://github.com/SOPKATHON-iOS-TEAM4/iOS/assets/101050833/f59c08f0-f3f2-487d-b79c-adf968b7d111
+
+
+
+
 <br>
 
 ## 📦 Libraries
@@ -169,5 +175,8 @@ P3 : 단순 의견 제시 (무시해도 됩니다)
 
 ## 🎆 Ayo Before
 ![KakaoTalk_Photo_2024-05-19-00-12-57](https://github.com/SOPKATHON-iOS-TEAM4/iOS/assets/84556636/9146fe72-82b2-4ebe-85f0-9207ac7cab75)
+
+![IMG_6896](https://github.com/SOPKATHON-iOS-TEAM4/iOS/assets/101050833/e60ebf1d-faf0-468c-9a95-6057895bf70c)
+
 
 
