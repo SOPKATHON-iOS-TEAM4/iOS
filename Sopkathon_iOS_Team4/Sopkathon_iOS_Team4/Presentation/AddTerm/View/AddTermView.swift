@@ -29,6 +29,8 @@ final class AddTermView: UIView {
     private lazy var addTermMeaningButton = UIButton()
     
     private let numOfTermMeaningLabel = UILabel()
+    
+    private lazy var confirmButton = UIButton()
 
     // MARK: - Initializer
     
@@ -108,6 +110,18 @@ final class AddTermView: UIView {
             $0.font = .pretendardMedium(size: 12)
             $0.textColor = .grayscale60
         }
+        
+        confirmButton.do {
+            let attrStr = NSAttributedString(
+                            string: "확인",
+                            attributes: [
+                                .font : UIFont.pretendardSemiBold(size: 16),
+                                .foregroundColor : UIColor.grayscale90
+                            ])
+            $0.setAttributedTitle(attrStr, for: .normal)
+            $0.setBackgroundColor(.grayscale50, for: .normal)
+            $0.layer.cornerRadius = 15
+        }
     }
     
     private func setHierarchy() {
@@ -119,7 +133,8 @@ final class AddTermView: UIView {
             termMeaningTextField,
             addTermMeaningButton,
             numOfTermLabel,
-            numOfTermMeaningLabel
+            numOfTermMeaningLabel,
+            confirmButton
         ].forEach { self.addSubviews($0) }
     }
     
@@ -168,6 +183,12 @@ final class AddTermView: UIView {
         numOfTermMeaningLabel.snp.makeConstraints {
             $0.top.equalTo(termMeaningTextField.snp.bottom).offset(10)
             $0.trailing.equalTo(termMeaningTextField).offset(-6)
+        }
+        
+        confirmButton.snp.makeConstraints {
+            $0.horizontalEdges.equalToSuperview().inset(24)
+            $0.bottom.equalTo(safeAreaLayoutGuide).offset(-22)
+            $0.height.equalTo(56)
         }
     }
 }
