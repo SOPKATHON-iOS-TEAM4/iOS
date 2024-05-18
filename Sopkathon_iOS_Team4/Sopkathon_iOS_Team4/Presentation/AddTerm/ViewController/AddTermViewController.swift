@@ -25,6 +25,8 @@ final class AddTermViewController: UIViewController {
     
     private var termMeaning = ""
     
+    private let testService = APIService<HomeAPIService>()
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -44,6 +46,21 @@ final class AddTermViewController: UIViewController {
     
     private func setInitial() {
         title = "단어 추가"
+        
+        if let navigationBar = self.navigationController?.navigationBar {
+            navigationBar.barTintColor = .black // 배경색을 설정할 수 있습니다. 필요에 따라 변경하세요.
+            navigationBar.isTranslucent = false
+            navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            navigationBar.tintColor = .white // 아이템의 틴트 컬러를 하얀색으로 설정
+        }
+        
+        let leftImage = UIImage(named: "ic_back")
+        let leftBarButton = UIBarButtonItem(image: leftImage, style: .plain, target: self, action: #selector(leftBarButtonTapped))
+        self.navigationItem.leftBarButtonItem = leftBarButton
+    }
+    
+    @objc private func leftBarButtonTapped() {
+        print("Left bar button tapped")
     }
     
     // MARK: - TextField  Setting
@@ -95,11 +112,34 @@ final class AddTermViewController: UIViewController {
     
     @objc
     private func createButtonDidTap() {
-//        dismiss(animated: true)
         delegate?.dataBind(term: term, termMeaning: termMeaning)
         rootView.addedTermList.insert(AddedTerm(
             term: rootView.termTextField.text ?? "",
             termMeaning: rootView.termMeaningTextField.text ?? ""), at: 0)
         rootView.putsnapshotData()
+    }
+}
+
+// MARK: - 네트워크 연결
+
+extension AddTermViewController {
+    func postNewTerm(
+        categoryId: Int,
+        vocabulary: String,
+        meaning: String
+    ) {
+        testService.sendRequest(
+            target: .postNewTerm(categoryId: categoryId, vocabulary: vocabulary, meaning: meaning),
+            instance: Response_PostNewTermDTO.self,
+            completion: { result in
+                switch result {
+                    
+                case .success(let result):
+                    print(result.success)
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        )
     }
 }
