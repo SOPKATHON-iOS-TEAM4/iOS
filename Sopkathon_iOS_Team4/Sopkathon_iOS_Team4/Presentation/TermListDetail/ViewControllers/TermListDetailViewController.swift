@@ -43,6 +43,29 @@ final class TermListDetailViewController: UIViewController {
     
 }
 
+private extension TermListDetailViewController {
+    func setupNavigationBar() {
+        
+        self.title = "제목"
+        
+        let leftBarButton = UIBarButtonItem(title: "Left", style: .plain, target: self, action: #selector(leftBarButtonTapped))
+        self.navigationItem.leftBarButtonItem = leftBarButton
+        
+        
+        let rightBarButton1 = UIBarButtonItem(title: "Right1", style: .plain, target: self, action: #selector(rightBarButtonTapped))
+        let rightBarButton2 = UIBarButtonItem(title: "Right2", style: .plain, target: self, action: #selector(rightBarButtonTapped))
+        self.navigationItem.rightBarButtonItems = [rightBarButton2, rightBarButton1]
+    }
+    
+    @objc private func leftBarButtonTapped() {
+        print("Left bar button tapped")
+    }
+    
+    @objc private func rightBarButtonTapped() {
+        print("Right bar button tapped")
+    }
+}
+
 extension TermListDetailViewController: UICollectionViewDelegate {
     
 }
