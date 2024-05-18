@@ -9,117 +9,117 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let testService = APIService<HomeAPIService>()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-    }
-    
-    func getCategoryList() {
-        testService.sendRequest(
-            target: .getCategoryList,
-            instance: Response_GetCategoryListDTO.self,
-            completion: { result in
-                switch result {
-                    
-                case .success(let result):
-                    print(result.result)
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        )
-    }
-    
-    func postCategory(categoryName: String) {
-        testService.sendRequest(
-            target: .postCategory(categoryName: categoryName),
-            instance: Response_PostCategoryDTO.self,
-            completion: { result in
-                print("@TAG - \(result)")
-                switch result {
-                    
-                case .success(let result):
-                    print(result.success)
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        )
-    }
-    
-    func getTermList(categoryId: Int) {
-        testService.sendRequest(
-            target: .getTermList(categoryId: categoryId),
-            instance: Response_GetTermListDTO.self,
-            completion: { result in
-                switch result {
-                    
-                case .success(let result):
-                    print(result.result)
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        )
-    }
-    
-    func postNewTerm(
-        categoryId: Int,
-        vocabulary: String,
-        meaning: String
-    ) {
-        testService.sendRequest(
-            target: .postNewTerm(categoryId: categoryId, vocabulary: vocabulary, meaning: meaning),
-            instance: Response_PostNewTermDTO.self,
-            completion: { result in
-                switch result {
-                    
-                case .success(let result):
-                    print(result.success)
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        )
-    }
-    
-    func getMemorizedWords() {
-        testService.sendRequest(
-            target: .getMemorizedWords,
-            instance: Response_GetMomorizedWordsDTO.self,
-            completion: { result in
-                switch result {
-                    
-                case .success(let result):
-                    print(result.memorizedWordList)
-                case .failure(let error):
-                    print(error)
-                    
-                }
-            }
-        )
-    }
-    
-    func getTermInfo(categoryId: Int, wordId: Int) {
-        testService.sendRequest(
-            target: .getTermInfo(categoryId: categoryId, wordId: wordId),
-            instance: Response_GetTermInfoDTO.self,
-            completion: { result in
-                switch result {
-                    
-                case .success(let result):
-                    print(result.word)
-                case .failure(let error):
-                    print(error)
-                    
-                }
-            }
-        )
-    }
-
+//    let testService = APIService<HomeAPIService>()
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view.
+//        
+//    }
+//    
+//    func getCategoryList() {
+//        testService.sendRequest(
+//            target: .getCategoryList,
+//            instance: Response_GetCategoryListDTO.self,
+//            completion: { result in
+//                switch result {
+//                    
+//                case .success(let result):
+//                    print(result.result)
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
+//        )
+//    }
+//    
+//    func postCategory(categoryName: String) {
+//        testService.sendRequest(
+//            target: .postCategory(categoryName: categoryName),
+//            instance: Response_PostCategoryDTO.self,
+//            completion: { result in
+//                print("@TAG - \(result)")
+//                switch result {
+//                    
+//                case .success(let result):
+//                    print(result.success)
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
+//        )
+//    }
+//    
+//    func getTermList(categoryId: Int) {
+//        testService.sendRequest(
+//            target: .getTermList(categoryId: categoryId),
+//            instance: Response_GetTermListDTO.self,
+//            completion: { result in
+//                switch result {
+//                    
+//                case .success(let result):
+//                    print(result.result)
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
+//        )
+//    }
+//    
+//    func postNewTerm(
+//        categoryId: Int,
+//        vocabulary: String,
+//        meaning: String
+//    ) {
+//        testService.sendRequest(
+//            target: .postNewTerm(categoryId: categoryId, vocabulary: vocabulary, meaning: meaning),
+//            instance: Response_PostNewTermDTO.self,
+//            completion: { result in
+//                switch result {
+//                    
+//                case .success(let result):
+//                    print(result.success)
+//                case .failure(let error):
+//                    print(error)
+//                }
+//            }
+//        )
+//    }
+//    
+//    func getMemorizedWords() {
+//        testService.sendRequest(
+//            target: .getMemorizedWords,
+//            instance: Response_GetMomorizedWordsDTO.self,
+//            completion: { result in
+//                switch result {
+//                    
+//                case .success(let result):
+//                    print(result.memorizedWordList)
+//                case .failure(let error):
+//                    print(error)
+//                    
+//                }
+//            }
+//        )
+//    }
+//    
+//    func getTermInfo(categoryId: Int, wordId: Int) {
+//        testService.sendRequest(
+//            target: .getTermInfo(categoryId: categoryId, wordId: wordId),
+//            instance: Response_GetTermInfoDTO.self,
+//            completion: { result in
+//                switch result {
+//                    
+//                case .success(let result):
+//                    print(result.word)
+//                case .failure(let error):
+//                    print(error)
+//                    
+//                }
+//            }
+//        )
+//    }
+//
 
 }
 

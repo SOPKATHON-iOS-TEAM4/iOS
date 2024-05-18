@@ -7,27 +7,28 @@
 
 import Foundation
 
-
+// MARK: - Welcome
 struct Response_GetMomorizedWordsDTO: Codable {
     let code: Int
     let success: Bool
     let message: String
-    let memorizedWordList: [MemorizedWordList]
-
-    enum CodingKeys: String, CodingKey {
-        case code, success, message
-        case memorizedWordList = "memorized_word_list"
-    }
+    let result: [WordList]
 }
 
-struct MemorizedWordList: Codable {
+// MARK: - Result
+struct WordList: Codable {
     let memorizedWordID, categoryID: Int
     let memorizedVocabulary, memorizedMeaning: String
 
     enum CodingKeys: String, CodingKey {
-        case memorizedWordID = "memorized_word_id"
-        case categoryID = "category_id"
-        case memorizedVocabulary = "memorized_vocabulary"
-        case memorizedMeaning = "memorized_meaning"
+        case memorizedWordID = "memorizedWordId"
+        case categoryID = "categoryId"
+        case memorizedVocabulary, memorizedMeaning
     }
 }
+
+
+
+    
+
+
