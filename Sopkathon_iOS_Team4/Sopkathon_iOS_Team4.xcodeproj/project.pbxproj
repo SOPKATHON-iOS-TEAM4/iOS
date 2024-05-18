@@ -42,6 +42,8 @@
 		83FA543C2BF50C3400F4C1CC /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543B2BF50C3400F4C1CC /* Pretendard-Thin.otf */; };
 		83FA543F2BF50D1D00F4C1CC /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543D2BF50D1D00F4C1CC /* Pretendard-Medium.otf */; };
 		83FA54402BF50D1D00F4C1CC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */; };
+		882004AA2BF91FD2009883A0 /* TermDetailToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882004A92BF91FD2009883A0 /* TermDetailToastView.swift */; };
+		8848D7EF2BF94883008284BF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8848D7EE2BF94883008284BF /* APIService.swift */; };
 		88C4F2542BF93BAD00633D79 /* CreateTermListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F2482BF93BAD00633D79 /* CreateTermListView.swift */; };
 		88C4F2552BF93BAD00633D79 /* CreateTermListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F24A2BF93BAD00633D79 /* CreateTermListViewController.swift */; };
 		88C4F2562BF93BAD00633D79 /* AddedTermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F24D2BF93BAD00633D79 /* AddedTermCell.swift */; };
@@ -49,7 +51,6 @@
 		88C4F2582BF93BAD00633D79 /* AddTermViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F2512BF93BAD00633D79 /* AddTermViewController.swift */; };
 		88C4F25E2BF93BB300633D79 /* TermHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F2592BF93BB200633D79 /* TermHistoryCollectionViewCell.swift */; };
 		88C4F25F2BF93BB300633D79 /* TermHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C4F25B2BF93BB200633D79 /* TermHistoryViewController.swift */; };
-		882004AA2BF91FD2009883A0 /* TermDetailToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882004A92BF91FD2009883A0 /* TermDetailToastView.swift */; };
 		88D000452BF90EAB00C26AA9 /* TermListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D000442BF90EAB00C26AA9 /* TermListDetailView.swift */; };
 		88D000472BF90EB800C26AA9 /* TermListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D000462BF90EB800C26AA9 /* TermListDetailViewController.swift */; };
 		88D000492BF90EC000C26AA9 /* TermMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D000482BF90EC000C26AA9 /* TermMainCollectionViewCell.swift */; };
@@ -89,6 +90,8 @@
 		83FA543B2BF50C3400F4C1CC /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		83FA543D2BF50D1D00F4C1CC /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		882004A92BF91FD2009883A0 /* TermDetailToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermDetailToastView.swift; sourceTree = "<group>"; };
+		8848D7EE2BF94883008284BF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		88C4F2482BF93BAD00633D79 /* CreateTermListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTermListView.swift; sourceTree = "<group>"; };
 		88C4F24A2BF93BAD00633D79 /* CreateTermListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTermListViewController.swift; sourceTree = "<group>"; };
 		88C4F24D2BF93BAD00633D79 /* AddedTermCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddedTermCell.swift; sourceTree = "<group>"; };
@@ -96,7 +99,6 @@
 		88C4F2512BF93BAD00633D79 /* AddTermViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTermViewController.swift; sourceTree = "<group>"; };
 		88C4F2592BF93BB200633D79 /* TermHistoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermHistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		88C4F25B2BF93BB200633D79 /* TermHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermHistoryViewController.swift; sourceTree = "<group>"; };
-		882004A92BF91FD2009883A0 /* TermDetailToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermDetailToastView.swift; sourceTree = "<group>"; };
 		88D000442BF90EAB00C26AA9 /* TermListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermListDetailView.swift; sourceTree = "<group>"; };
 		88D000462BF90EB800C26AA9 /* TermListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermListDetailViewController.swift; sourceTree = "<group>"; };
 		88D000482BF90EC000C26AA9 /* TermMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermMainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				83FA54102BF5095700F4C1CC /* Base */,
 				83FA540F2BF5094D00F4C1CC /* Home */,
+				8848D7EE2BF94883008284BF /* APIService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -304,41 +307,6 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		88D000402BF90E8900C26AA9 /* TermListDetail */ = {
-			isa = PBXGroup;
-			children = (
-				88D000432BF90EA300C26AA9 /* Views */,
-				88D000422BF90E9F00C26AA9 /* ViewControllers */,
-				88D000412BF90E9800C26AA9 /* Cells */,
-			);
-			path = TermListDetail;
-			sourceTree = "<group>";
-		};
-		88D000412BF90E9800C26AA9 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				88D000482BF90EC000C26AA9 /* TermMainCollectionViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		88D000422BF90E9F00C26AA9 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				88D000462BF90EB800C26AA9 /* TermListDetailViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		88D000432BF90EA300C26AA9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				88D000442BF90EAB00C26AA9 /* TermListDetailView.swift */,
-				882004A92BF91FD2009883A0 /* TermDetailToastView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		88C4F2492BF93BAD00633D79 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +389,41 @@
 				88C4F25C2BF93BB200633D79 /* TermHistoryViewController */,
 			);
 			path = TermHistory;
+			sourceTree = "<group>";
+		};
+		88D000402BF90E8900C26AA9 /* TermListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				88D000432BF90EA300C26AA9 /* Views */,
+				88D000422BF90E9F00C26AA9 /* ViewControllers */,
+				88D000412BF90E9800C26AA9 /* Cells */,
+			);
+			path = TermListDetail;
+			sourceTree = "<group>";
+		};
+		88D000412BF90E9800C26AA9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				88D000482BF90EC000C26AA9 /* TermMainCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		88D000422BF90E9F00C26AA9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				88D000462BF90EB800C26AA9 /* TermListDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88D000432BF90EA300C26AA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88D000442BF90EAB00C26AA9 /* TermListDetailView.swift */,
+				882004A92BF91FD2009883A0 /* TermDetailToastView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +520,7 @@
 				88C4F2562BF93BAD00633D79 /* AddedTermCell.swift in Sources */,
 				88D000492BF90EC000C26AA9 /* TermMainCollectionViewCell.swift in Sources */,
 				83FA53E22BF5064200F4C1CC /* ViewController.swift in Sources */,
+				8848D7EF2BF94883008284BF /* APIService.swift in Sources */,
 				88D000472BF90EB800C26AA9 /* TermListDetailViewController.swift in Sources */,
 				83FA54062BF5081300F4C1CC /* UITextField+.swift in Sources */,
 				83FA540E2BF5086700F4C1CC /* UIImageView+.swift in Sources */,
