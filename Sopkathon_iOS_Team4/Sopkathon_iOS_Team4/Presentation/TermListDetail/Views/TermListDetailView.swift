@@ -43,7 +43,8 @@ final class TermListDetailView: UIView {
         setupStyle()
         setupHierarchy()
         setupLayout()
-    
+        
+        termMainCollectionView.register(TermMainCollectionlViewCell.self, forCellWithReuseIdentifier: TermMainCollectionlViewCell.className)
     }
     
     @available(*, unavailable)
