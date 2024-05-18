@@ -48,8 +48,13 @@ final class TermHistoryViewController: UIViewController {
     }
     
     private func setupLayout() {
+        navigationBar.snp.makeConstraints{
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            $0.horizontalEdges.equalToSuperview()
+            $0.height.equalTo(44)
+        }
         termHistoryCollectionView.snp.makeConstraints{
-            $0.top.equalToSuperview().inset(90)
+            $0.top.equalTo(navigationBar.snp.bottom).offset(16)
             $0.bottom.horizontalEdges.equalToSuperview()
         }
     }
@@ -66,7 +71,12 @@ final class TermHistoryViewController: UIViewController {
     
     private func setNavigationBar() {
         let navItem = UINavigationItem(title: "단어장")
-
+        navItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_back"), style: .plain, target: self, action: #selector(tapDismissButton))
+        navigationBar.setItems([navItem], animated: true)
+    }
+    
+    @objc func tapDismissButton(){
+        
     }
 }
 
