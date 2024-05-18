@@ -9,15 +9,14 @@ import UIKit
 
 final class MainViewController: UIViewController {
     
-    
     // MARK: - Properties
     
-    private var datadummy = MainModel.dummy()
-    
+    let testService = APIService<HomeAPIService>()
+    var result1data : [Result1] = []
+   
     // MARK: - UI Components
     
     private let rootView = MainView()
-    
     
     // MARK: - Life Cycles
     
@@ -36,6 +35,7 @@ final class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        getCategoryList()
         self.navigationController?.navigationBar.isHidden = true
     }
 }
@@ -54,18 +54,17 @@ private extension MainViewController {
     
     func setaddTarget() {
         rootView.addButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        // icknameView.saveButton.addTarget(self, action: #selector(saveButtonDidTap), for: .touchUpInside)
     }
 }
 
-// MARK: - TableView
-
 extension MainViewController: UITableViewDelegate {
+    
 }
+// MARK: - TableView
 
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datadummy.count
+        return result1data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,7 +72,7 @@ extension MainViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        let data = datadummy[indexPath.item]
+        let data = result1data[indexPath.item]
         cell.configureCell(forModel: data)
         return cell
     }
@@ -95,3 +94,26 @@ extension MainViewController {
     }
 }
 
+extension MainViewController {
+    func getCategoryList() {
+        testService.sendRequest(
+            target: .getCategoryList,
+            instance: Response_GetCategoryListDTO.self,
+            completion: {  result in
+                switch result {
+                case .success(let result):
+                    self.result1data = result.result
+                    self.rootView.termListTableView.reloadData()
+                    self.rootView.termListTableView.snp.remakeConstraints {
+                        $0.top.equalTo(self.rootView.logoImageView.snp.bottom).offset(34)
+                        $0.centerX.equalToSuperview()
+                        $0.width.equalTo(UIScreen.main.bounds.size.width)
+                        $0.height.equalTo(self.result1data.count * 103)
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        )
+    }
+}
