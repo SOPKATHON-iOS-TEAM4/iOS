@@ -88,8 +88,8 @@ private extension TermListTableViewCell {
 
 extension TermListTableViewCell {
     func configureCell(forModel: MainModel) {
-        titleLabel.text = forModel.title
-        countLabel.text = String(forModel.count) + "개"
+//        titleLabel.text = forModel.title
+//        countLabel.text = String(forModel.count) + "개"
     }
 }
 

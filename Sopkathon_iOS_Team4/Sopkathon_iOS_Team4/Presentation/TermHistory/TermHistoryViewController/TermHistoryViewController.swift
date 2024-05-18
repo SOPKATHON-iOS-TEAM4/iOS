@@ -23,7 +23,7 @@ final class TermHistoryViewController: UIViewController {
     private let termHistoryCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: 313, height: 97)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width-50, height: 97)
         layout.minimumLineSpacing = 15
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .clear
@@ -55,7 +55,8 @@ final class TermHistoryViewController: UIViewController {
         }
         termHistoryCollectionView.snp.makeConstraints{
             $0.top.equalTo(navigationBar.snp.bottom).offset(16)
-            $0.bottom.horizontalEdges.equalToSuperview()
+            $0.centerX.bottom.equalToSuperview()
+            $0.horizontalEdges.equalToSuperview()
         }
     }
     
@@ -86,6 +87,9 @@ final class TermHistoryViewController: UIViewController {
         
         navigationBar.setItems([navItem], animated: true)
         navigationBar.barTintColor = .black
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = true
     }
     
     @objc func tapDismissButton(){
@@ -103,4 +107,8 @@ extension TermHistoryViewController: UICollectionViewDelegate, UICollectionViewD
         else { return UICollectionViewCell() }
         return cell
     }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//            return CGSize(width: UIScreen.main.bounds.width, height: 97)
+//        }
 }
