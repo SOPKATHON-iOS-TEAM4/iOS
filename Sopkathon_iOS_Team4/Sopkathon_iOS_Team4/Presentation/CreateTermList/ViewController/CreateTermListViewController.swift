@@ -94,29 +94,5 @@ final class CreateTermListViewController: UIViewController {
     
     @objc
     private func createButtonDidTap() {
-        postCategory(categoryName: termList)
-        delegate?.dataBind(termList: termList)
-        //        dismiss(animated: true)
-    }
-}
-
-// MARK: - 네트워크 연결
-
-extension CreateTermListViewController {
-    func postCategory(categoryName: String) {
-        testService.sendRequest(
-            target: .postCategory(categoryName: categoryName),
-            instance: Response_PostCategoryDTO.self,
-            completion: { result in
-                print("@TAG - \(result)")
-                switch result {
-                    
-                case .success(let result):
-                    print(result.success)
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
-        )
     }
 }

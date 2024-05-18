@@ -80,6 +80,15 @@ extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 103
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TermListTableViewCell.className, for: indexPath) as? TermListTableViewCell else {
+            return ()
+        }
+    
+        let vc = TermListDetailViewController()
+        navigationController?.pushViewController(vc, animated: false)
+    }
 }
 
 
@@ -89,8 +98,8 @@ extension MainViewController {
     @objc func buttonTapped() {
         print("SAVE BUTTON TAPPED")
         // TODO: - 단어장 추가 ViewController 연결
-        //        let vc = ViewController()
-        //        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = CreateTermListViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
