@@ -22,15 +22,11 @@ final class AddTermView: UIView {
     
     private let termTextField = UITextField()
     
-    private lazy var addTermButton = UIButton()
-    
     private let numOfTermLabel = UILabel()
     
     private let termMeaningLabel = UILabel()
     
     private let termMeaningTextField = UITextField()
-    
-    private lazy var addTermMeaningButton = UIButton()
     
     private let numOfTermMeaningLabel = UILabel()
     
@@ -74,18 +70,6 @@ final class AddTermView: UIView {
             $0.makeRounded(radius: 15)
         }
         
-        addTermButton.do {
-            let attrStr = NSAttributedString(
-                            string: "추가",
-                            attributes: [
-                                .font : UIFont.pretendardSemiBold(size: 14),
-                                .foregroundColor : UIColor.grayscale30
-                            ])
-            $0.setAttributedTitle(attrStr, for: .normal)
-            $0.setBackgroundColor(.grayscale50, for: .normal)
-            $0.layer.cornerRadius = 10
-        }
-        
         numOfTermLabel.do {
             $0.text = "0/20"
             $0.font = .pretendardMedium(size: 12)
@@ -103,18 +87,6 @@ final class AddTermView: UIView {
             $0.addPadding(left: 16, right: 16)
             $0.changePlaceholderColor(forPlaceHolder: "단어의 뜻을 입력해주세요", forColor: .grayscale50)
             $0.makeRounded(radius: 15)
-        }
-        
-        addTermMeaningButton.do {
-            let attrStr = NSAttributedString(
-                            string: "추가",
-                            attributes: [
-                                .font : UIFont.pretendardSemiBold(size: 14),
-                                .foregroundColor : UIColor.grayscale30
-                            ])
-            $0.setAttributedTitle(attrStr, for: .normal)
-            $0.setBackgroundColor(.grayscale50, for: .normal)
-            $0.layer.cornerRadius = 10
         }
         
         numOfTermMeaningLabel.do {
@@ -146,10 +118,8 @@ final class AddTermView: UIView {
         [
             termLabel,
             termTextField,
-            addTermButton,
             termMeaningLabel,
             termMeaningTextField,
-            addTermMeaningButton,
             numOfTermLabel,
             numOfTermMeaningLabel,
             addedTermCollectionView,
@@ -169,13 +139,6 @@ final class AddTermView: UIView {
             $0.height.equalTo(46)
         }
         
-        addTermButton.snp.makeConstraints {
-            $0.trailing.equalTo(termTextField).offset(-6)
-            $0.centerY.equalTo(termTextField)
-            $0.width.equalTo(50)
-            $0.height.equalTo(34)
-        }
-        
         numOfTermLabel.snp.makeConstraints {
             $0.top.equalTo(termTextField.snp.bottom).offset(10)
             $0.trailing.equalTo(termTextField).offset(-6)
@@ -190,13 +153,6 @@ final class AddTermView: UIView {
             $0.top.equalTo(termMeaningLabel.snp.bottom).offset(18)
             $0.horizontalEdges.equalToSuperview().inset(24)
             $0.height.equalTo(46)
-        }
-        
-        addTermMeaningButton.snp.makeConstraints {
-            $0.trailing.equalTo(termMeaningTextField).offset(-6)
-            $0.centerY.equalTo(termMeaningTextField)
-            $0.width.equalTo(50)
-            $0.height.equalTo(34)
         }
         
         numOfTermMeaningLabel.snp.makeConstraints {
