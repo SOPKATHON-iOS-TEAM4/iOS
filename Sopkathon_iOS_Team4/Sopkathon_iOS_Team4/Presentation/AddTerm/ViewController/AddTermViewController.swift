@@ -88,5 +88,9 @@ final class AddTermViewController: UIViewController {
     private func createButtonDidTap() {
 //        dismiss(animated: true)
         delegate?.dataBind(term: term, termMeaning: termMeaning)
+        rootView.addedTermList.insert(AddedTerm(
+            term: rootView.termTextField.text ?? "",
+            termMeaning: rootView.termMeaningTextField.text ?? ""), at: 0)
+        rootView.putsnapshotData()
     }
 }

@@ -36,9 +36,9 @@ final class AddTermView: UIView {
     
     // MARK: - Properties
     
-    private var dataSource: UICollectionViewDiffableDataSource<Section, AddedTerm>!
+    var addedTermList = AddedTerm.list 
     
-    private let addedTermList = AddedTerm.list
+    private var dataSource: UICollectionViewDiffableDataSource<Section, AddedTerm>!
 
     // MARK: - Initializer
     
