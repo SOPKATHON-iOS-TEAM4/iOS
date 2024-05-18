@@ -14,13 +14,12 @@ final class MainView: UIView {
     
     // MARK: - Properties
     
-    private let datadummy = MainModel.dummy()
-    
+    let itemCnt: Int = 0
     // MARK: - UI Components
     
     let termListTableView = UITableView()
     let addButton = UIButton()
-    private let logoImageView = UIImageView()
+    let logoImageView = UIImageView()
     
     // MARK: - Life Cycles
     
@@ -74,7 +73,7 @@ private extension MainView {
             $0.top.equalTo(logoImageView.snp.bottom).offset(34)
             $0.centerX.equalToSuperview()
             $0.width.equalTo(UIScreen.main.bounds.size.width)
-            $0.height.equalTo(103 * datadummy.count)
+            $0.height.equalTo(500)
         }
         
         addButton.snp.makeConstraints {
@@ -84,4 +83,3 @@ private extension MainView {
         }
     }
 }
-
