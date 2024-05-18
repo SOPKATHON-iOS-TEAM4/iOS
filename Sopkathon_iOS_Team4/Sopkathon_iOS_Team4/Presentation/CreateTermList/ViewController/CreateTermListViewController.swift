@@ -7,11 +7,15 @@
 
 import UIKit
 
-import Then
+protocol TermListDataBindDelegate: AnyObject {
+    func dataBind(termList: String?)
+}
 
 final class CreateTermListViewController: UIViewController {
     
     // MARK: - Properties
+    
+    weak var delegate: TermListDataBindDelegate?
     
     private let rootView = CreateTermListView()
     
@@ -23,6 +27,7 @@ final class CreateTermListViewController: UIViewController {
         super.viewDidLoad()
         
         setTextField()
+        setButtonAction()
     }
     
     override func loadView() {
@@ -57,5 +62,15 @@ final class CreateTermListViewController: UIViewController {
             rootView.createButton.setBackgroundColor(.grayscale50, for: .normal)
             rootView.createButton.isEnabled = false
         }
+    }
+    
+    private func setButtonAction() {
+        rootView.createButton.addTarget(self, action: #selector(createButtonDidTap), for: .touchUpInside)
+    }
+    
+    @objc
+    private func createButtonDidTap() {
+//        dismiss(animated: true)
+        delegate?.dataBind(termList: termList)
     }
 }

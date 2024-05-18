@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol TermDataBindDelegate: AnyObject {
+    func dataBind(term: String?, termMeaning: String?)
+}
+
 final class AddTermViewController: UIViewController {
 
     // MARK: - Properties
+    
+    weak var delegate: TermDataBindDelegate?
     
     private let rootView = AddTermView()
     
@@ -24,6 +30,7 @@ final class AddTermViewController: UIViewController {
         
         rootView.configureCollectionView()
         setTextField()
+        setButtonAction()
     }
     
     override func loadView() {
@@ -73,4 +80,13 @@ final class AddTermViewController: UIViewController {
         }
     }
     
+    private func setButtonAction() {
+        rootView.confirmButton.addTarget(self, action: #selector(createButtonDidTap), for: .touchUpInside)
+    }
+    
+    @objc
+    private func createButtonDidTap() {
+//        dismiss(animated: true)
+        delegate?.dataBind(term: term, termMeaning: termMeaning)
+    }
 }
