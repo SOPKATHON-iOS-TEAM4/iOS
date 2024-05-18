@@ -64,7 +64,7 @@ private extension TermDetailToastView {
         }
         
         reduceButton.do {
-            $0.setImage(.add, for: .normal)
+            $0.setImage(UIImage(named: "ic_reduce"), for: .normal)
         }
         
         countLabel.do {
@@ -79,10 +79,13 @@ private extension TermDetailToastView {
         
         textStack.do {
             $0.axis = .vertical
+            $0.spacing = 5
         }
         
         btnStack.do {
             $0.axis = .vertical
+            $0.spacing = 5
+            $0.alignment = .center
         }
     }
     
@@ -99,8 +102,12 @@ private extension TermDetailToastView {
             $0.centerY.equalToSuperview()
         }
         
+        reduceButton.snp.makeConstraints {
+            $0.size.equalTo(30)
+        }
+        
         btnStack.snp.makeConstraints {
-            $0.trailing.equalToSuperview().offset(-24)
+            $0.trailing.equalToSuperview().offset(-16)
             $0.centerY.equalToSuperview()
         }
     }
