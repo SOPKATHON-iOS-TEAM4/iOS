@@ -20,11 +20,15 @@ final class AddTermView: UIView {
     
     private lazy var addTermButton = UIButton()
     
+    private let numOfTermLabel = UILabel()
+    
     private let termMeaningLabel = UILabel()
     
     private let termMeaningTextField = UITextField()
     
     private lazy var addTermMeaningButton = UIButton()
+    
+    private let numOfTermMeaningLabel = UILabel()
 
     // MARK: - Initializer
     
@@ -68,6 +72,12 @@ final class AddTermView: UIView {
             $0.layer.cornerRadius = 10
         }
         
+        numOfTermLabel.do {
+            $0.text = "0/20"
+            $0.font = .pretendardMedium(size: 12)
+            $0.textColor = .grayscale60
+        }
+        
         termMeaningLabel.do {
             $0.text = "뜻"
             $0.font = .pretendardSemiBold(size: 16)
@@ -92,11 +102,24 @@ final class AddTermView: UIView {
             $0.setBackgroundColor(.grayscale50, for: .normal)
             $0.layer.cornerRadius = 10
         }
+        
+        numOfTermMeaningLabel.do {
+            $0.text = "0/20"
+            $0.font = .pretendardMedium(size: 12)
+            $0.textColor = .grayscale60
+        }
     }
     
     private func setHierarchy() {
         [
-            termLabel, termTextField, addTermButton, termMeaningLabel, termMeaningTextField, addTermMeaningButton
+            termLabel,
+            termTextField,
+            addTermButton,
+            termMeaningLabel,
+            termMeaningTextField,
+            addTermMeaningButton,
+            numOfTermLabel,
+            numOfTermMeaningLabel
         ].forEach { self.addSubviews($0) }
     }
     
@@ -119,6 +142,11 @@ final class AddTermView: UIView {
             $0.height.equalTo(34)
         }
         
+        numOfTermLabel.snp.makeConstraints {
+            $0.top.equalTo(termTextField.snp.bottom).offset(10)
+            $0.trailing.equalTo(termTextField).offset(-6)
+        }
+        
         termMeaningLabel.snp.makeConstraints {
             $0.top.equalTo(termTextField.snp.bottom).offset(32)
             $0.horizontalEdges.equalToSuperview().offset(24)
@@ -135,6 +163,11 @@ final class AddTermView: UIView {
             $0.centerY.equalTo(termMeaningTextField)
             $0.width.equalTo(50)
             $0.height.equalTo(34)
+        }
+        
+        numOfTermMeaningLabel.snp.makeConstraints {
+            $0.top.equalTo(termMeaningTextField.snp.bottom).offset(10)
+            $0.trailing.equalTo(termMeaningTextField).offset(-6)
         }
     }
 }
