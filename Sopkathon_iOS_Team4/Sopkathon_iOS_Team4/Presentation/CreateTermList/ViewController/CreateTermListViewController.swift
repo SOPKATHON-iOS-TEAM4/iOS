@@ -78,7 +78,7 @@ final class CreateTermListViewController: UIViewController {
     
     @objc
     private func createButtonDidTap() {
-//        dismiss(animated: true)
         delegate?.dataBind(termList: termList)
+        navigationController?.popViewController(animated: true)
     }
 }
