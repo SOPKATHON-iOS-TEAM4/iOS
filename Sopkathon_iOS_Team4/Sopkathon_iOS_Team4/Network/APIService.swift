@@ -8,7 +8,7 @@
 import Foundation
 import Moya
 
-let BASE_URL = "http://3.34.16.87/api/v1"
+let BASE_URL = "http://3.34.16.87"
 
 final class APIService<Provider : TargetType> : MoyaProvider<Provider> {
 
@@ -44,6 +44,24 @@ final class APIService<Provider : TargetType> : MoyaProvider<Provider> {
             throw MoyaError.statusCode(response)
         default:
             throw MoyaError.underlying(URLError(.networkConnectionLost), response)
+        }
+    }
+}
+
+class testClass {
+    
+    let service = APIService<HomeAPIService>()
+    
+    func test() {
+        // target에 enum케이스를, instance에 데이터타입.self
+        service.sendRequest(target: .getCategoryList, instance: Response_GetCategoryListDTO.self) { result in
+            switch result {
+                
+            case .success(let result):
+                print(result.result)
+            case .failure(let error):
+                print(error)
+            }
         }
     }
 }
