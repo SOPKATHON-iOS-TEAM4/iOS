@@ -23,7 +23,17 @@ final class TermListDetailViewController: UIViewController {
         TermModel(termId: 7, termContentEng: "Term Seven", termContentKor: "용어 일곱", termCount: 70),
         TermModel(termId: 8, termContentEng: "Term Eight", termContentKor: "용어 여덟", termCount: 80),
         TermModel(termId: 9, termContentEng: "Term Nine", termContentKor: "용어 아홉", termCount: 90),
-        TermModel(termId: 10, termContentEng: "Term Ten", termContentKor: "용어 열", termCount: 100)
+        TermModel(termId: 10, termContentEng: "Term Ten", termContentKor: "용어 열", termCount: 100),
+        TermModel(termId: 11, termContentEng: "Term One", termContentKor: "용어 하나", termCount: 10),
+        TermModel(termId: 12, termContentEng: "Term Two", termContentKor: "용어 둘", termCount: 20),
+        TermModel(termId: 13, termContentEng: "Term Three", termContentKor: "용어 셋", termCount: 30),
+        TermModel(termId: 14, termContentEng: "Term Four", termContentKor: "용어 넷", termCount: 40),
+        TermModel(termId: 15, termContentEng: "Term Five", termContentKor: "용어 다섯", termCount: 50),
+        TermModel(termId: 16, termContentEng: "Term Six", termContentKor: "용어 여섯", termCount: 60),
+        TermModel(termId: 17, termContentEng: "Term Seven", termContentKor: "용어 일곱", termCount: 70),
+        TermModel(termId: 18, termContentEng: "Term Eight", termContentKor: "용어 여덟", termCount: 80),
+        TermModel(termId: 19, termContentEng: "Term Nine", termContentKor: "용어 아홉", termCount: 90),
+        TermModel(termId: 20, termContentEng: "Term Ten", termContentKor: "용어 열", termCount: 100)
     ]
     
     // MARK: - UI Components

@@ -25,7 +25,7 @@ final class TermMainCollectionlViewCell: UICollectionViewCell {
     
     // MARK: - UI Components
     
-    private var backView = UIView()
+    private var backgroundImageView = UIImageView()
     private var termLabel = UILabel()
     
     // MARK: - Life Cycles
@@ -49,9 +49,7 @@ final class TermMainCollectionlViewCell: UICollectionViewCell {
 
 private extension TermMainCollectionlViewCell {
     func setupStyle() {
-        backView.do {
-            $0.backgroundColor = .main50
-        }
+        setCellBackgroundImage()
         
         termLabel.do {
             $0.font = .pretendardMedium(size: 16)
@@ -61,11 +59,11 @@ private extension TermMainCollectionlViewCell {
     }
     
     func setupHierarchy() {
-        [backView, termLabel].forEach { self.contentView.addSubview($0) }
+        [backgroundImageView, termLabel].forEach { self.contentView.addSubview($0) }
     }
     
     func setupLayout() {
-        backView.snp.makeConstraints {
+        backgroundImageView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
         
@@ -73,5 +71,11 @@ private extension TermMainCollectionlViewCell {
             $0.leading.top.equalToSuperview().offset(5)
             $0.trailing.bottom.equalToSuperview().offset(-5)
         }
+    }
+}
+
+private extension TermMainCollectionlViewCell {
+    func setCellBackgroundImage() {
+        self.backgroundImageView.image = UIImage(named: "img_cellIBackground\(Int.random(in: 1...7))")
     }
 }

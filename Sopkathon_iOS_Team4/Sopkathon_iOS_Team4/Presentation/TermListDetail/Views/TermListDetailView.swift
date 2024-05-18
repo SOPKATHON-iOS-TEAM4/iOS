@@ -17,15 +17,11 @@ final class TermListDetailView: UIView {
     
     // MARK: - UI Components
     
-    private let cvBackgroundView = UIView()
+    private let cvBackgroundImageView = UIImageView()
     
     let termMainCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout().then {
-        
         $0.itemSize = CGSize(width: 70, height: 70)
-        
-        $0.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        
-        
+        $0.sectionInset = UIEdgeInsets(top: 30, left: 10, bottom: 10, right: 10)
         $0.minimumInteritemSpacing = 10
         $0.minimumLineSpacing = 10
         $0.scrollDirection = .vertical
@@ -59,9 +55,14 @@ final class TermListDetailView: UIView {
 
 private extension TermListDetailView {
     func setupStyle() {
-        cvBackgroundView.do {
-            $0.backgroundColor = .grayscale70
+        cvBackgroundImageView.do {
+            $0.image = UIImage(named: "img_collectionViewBackground")
+//            $0.backgroundColor = .grayscale70
             $0.makeRounded(radius: 20)
+        }
+        
+        termMainCollectionView.do {
+            $0.backgroundColor = .clear
         }
         
         countLabelBackgroundView.do {
@@ -82,7 +83,7 @@ private extension TermListDetailView {
     
     func setupHierarchy() {
         [
-            cvBackgroundView,
+            cvBackgroundImageView,
             termMainCollectionView,
             countLabelBackgroundView,
             termListCount,
@@ -91,7 +92,7 @@ private extension TermListDetailView {
     }
     
     func setupLayout() {
-        cvBackgroundView.snp.makeConstraints {
+        cvBackgroundImageView.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(60)
             $0.trailing.equalToSuperview().offset(-60)
             $0.top.equalTo(self.safeAreaLayoutGuide).offset(130)
@@ -99,7 +100,8 @@ private extension TermListDetailView {
         }
         
         termMainCollectionView.snp.makeConstraints {
-            $0.edges.equalTo(cvBackgroundView)
+            $0.edges.equalTo(cvBackgroundImageView).inset(10)
+            $0.bottom.equalTo(cvBackgroundImageView).inset(20)
         }
         
         termListCount.snp.makeConstraints {
