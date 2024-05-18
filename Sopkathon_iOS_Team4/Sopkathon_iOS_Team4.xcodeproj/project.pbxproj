@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		21F57DCE2BF9263100EDA711 /* AddedTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F57DCD2BF9263100EDA711 /* AddedTerm.swift */; };
+		8373818D2BF93EA400949A9D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373818C2BF93EA400949A9D /* MainViewController.swift */; };
+		8373818F2BF93EAC00949A9D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373818E2BF93EAC00949A9D /* MainView.swift */; };
+		837381912BF93EC600949A9D /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837381902BF93EC600949A9D /* MainModel.swift */; };
+		837381932BF93F4200949A9D /* TermListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837381922BF93F4200949A9D /* TermListTableViewCell.swift */; };
 		83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */; };
 		83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */; };
 		83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */; };
@@ -57,6 +61,10 @@
 
 /* Begin PBXFileReference section */
 		21F57DCD2BF9263100EDA711 /* AddedTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedTerm.swift; sourceTree = "<group>"; };
+		8373818C2BF93EA400949A9D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8373818E2BF93EAC00949A9D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		837381902BF93EC600949A9D /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		837381922BF93F4200949A9D /* TermListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermListTableViewCell.swift; sourceTree = "<group>"; };
 		83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		83FA53DA2BF5064200F4C1CC /* Sopkathon_iOS_Team4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopkathon_iOS_Team4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +125,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		837381892BF93E8A00949A9D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8373818B2BF93E9400949A9D /* View */,
+				8373818A2BF93E8F00949A9D /* ViewController */,
+				837381902BF93EC600949A9D /* MainModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8373818A2BF93E8F00949A9D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8373818C2BF93EA400949A9D /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8373818B2BF93E9400949A9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8373818E2BF93EAC00949A9D /* MainView.swift */,
+				837381922BF93F4200949A9D /* TermListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		83FA53D12BF5064200F4C1CC = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +183,7 @@
 		83FA53F12BF5075300F4C1CC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				837381892BF93E8A00949A9D /* Main */,
 				88C4F25D2BF93BB200633D79 /* TermHistory */,
 				88C4F2532BF93BAD00633D79 /* AddTerm */,
 				88C4F24C2BF93BAD00633D79 /* CreateTermList */,
@@ -527,7 +563,11 @@
 				21F57DCE2BF9263100EDA711 /* AddedTerm.swift in Sources */,
 				88C4F2542BF93BAD00633D79 /* CreateTermListView.swift in Sources */,
 				83FA54182BF509BD00F4C1CC /* GetHomeResponseDTO.swift in Sources */,
+				837381912BF93EC600949A9D /* MainModel.swift in Sources */,
+				837381932BF93F4200949A9D /* TermListTableViewCell.swift in Sources */,
 				83FA53FC2BF507C500F4C1CC /* StringLiterals.swift in Sources */,
+				8373818F2BF93EAC00949A9D /* MainView.swift in Sources */,
+				8373818D2BF93EA400949A9D /* MainViewController.swift in Sources */,
 				83FA53FE2BF507D200F4C1CC /* FontLiterals.swift in Sources */,
 				88C4F25F2BF93BB300633D79 /* TermHistoryViewController.swift in Sources */,
 				83FA54122BF5096C00F4C1CC /* NetworkResult.swift in Sources */,
