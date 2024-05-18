@@ -49,21 +49,34 @@ final class TermListDetailViewController: UIViewController {
         super.viewDidLoad()
         termView.termMainCollectionView.delegate = self
         termView.termMainCollectionView.dataSource = self
+        setupNavigationBar()
     }
     
 }
 
 private extension TermListDetailViewController {
     func setupNavigationBar() {
+        self.title = "인사할 때 사용"
         
-        self.title = "제목"
+        if let navigationBar = self.navigationController?.navigationBar {
+            navigationBar.barTintColor = .black // 배경색을 설정할 수 있습니다. 필요에 따라 변경하세요.
+            navigationBar.isTranslucent = false
+            navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+            navigationBar.tintColor = .white // 아이템의 틴트 컬러를 하얀색으로 설정
+        }
         
-        let leftBarButton = UIBarButtonItem(title: "Left", style: .plain, target: self, action: #selector(leftBarButtonTapped))
+        let leftImage = UIImage(named: "ic_back")
+        let leftBarButton = UIBarButtonItem(image: leftImage, style: .plain, target: self, action: #selector(leftBarButtonTapped))
         self.navigationItem.leftBarButtonItem = leftBarButton
         
+        let rightImage1 = UIImage(named: "ic_edit")
+        let rightBarButton1 = UIBarButtonItem(image: rightImage1, style: .plain, target: self, action: #selector(rightBarButtonTapped))
         
-        let rightBarButton1 = UIBarButtonItem(title: "Right1", style: .plain, target: self, action: #selector(rightBarButtonTapped))
-        let rightBarButton2 = UIBarButtonItem(title: "Right2", style: .plain, target: self, action: #selector(rightBarButtonTapped))
+        
+        let rightImage2 = UIImage(named: "ic_calendar")
+        let rightBarButton2 = UIBarButtonItem(image: rightImage2, style: .plain, target: self, action: #selector(rightBarButtonTapped))
+        
+
         self.navigationItem.rightBarButtonItems = [rightBarButton2, rightBarButton1]
     }
     
