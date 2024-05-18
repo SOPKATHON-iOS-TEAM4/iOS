@@ -41,6 +41,7 @@
 		83FA543C2BF50C3400F4C1CC /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543B2BF50C3400F4C1CC /* Pretendard-Thin.otf */; };
 		83FA543F2BF50D1D00F4C1CC /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543D2BF50D1D00F4C1CC /* Pretendard-Medium.otf */; };
 		83FA54402BF50D1D00F4C1CC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */; };
+		882004AA2BF91FD2009883A0 /* TermDetailToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882004A92BF91FD2009883A0 /* TermDetailToastView.swift */; };
 		88D000452BF90EAB00C26AA9 /* TermListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D000442BF90EAB00C26AA9 /* TermListDetailView.swift */; };
 		88D000472BF90EB800C26AA9 /* TermListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D000462BF90EB800C26AA9 /* TermListDetailViewController.swift */; };
 		88D000492BF90EC000C26AA9 /* TermMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D000482BF90EC000C26AA9 /* TermMainCollectionViewCell.swift */; };
@@ -79,6 +80,7 @@
 		83FA543B2BF50C3400F4C1CC /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		83FA543D2BF50D1D00F4C1CC /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		882004A92BF91FD2009883A0 /* TermDetailToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermDetailToastView.swift; sourceTree = "<group>"; };
 		88D000442BF90EAB00C26AA9 /* TermListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermListDetailView.swift; sourceTree = "<group>"; };
 		88D000462BF90EB800C26AA9 /* TermListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermListDetailViewController.swift; sourceTree = "<group>"; };
 		88D000482BF90EC000C26AA9 /* TermMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermMainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				88D000442BF90EAB00C26AA9 /* TermListDetailView.swift */,
+				882004A92BF91FD2009883A0 /* TermDetailToastView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				83FA53FE2BF507D200F4C1CC /* FontLiterals.swift in Sources */,
 				83FA54122BF5096C00F4C1CC /* NetworkResult.swift in Sources */,
 				83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */,
+				882004AA2BF91FD2009883A0 /* TermDetailToastView.swift in Sources */,
 				83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */,
 				83FA54002BF507DB00F4C1CC /* NSObject+.swift in Sources */,
 				83FA540C2BF5085200F4C1CC /* UIButton+.swift in Sources */,

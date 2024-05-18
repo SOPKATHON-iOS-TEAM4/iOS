@@ -35,6 +35,8 @@ final class TermListDetailView: UIView {
     
     private let termListCount = UILabel()
     
+    private let termToastView: TermDetailToastView = TermDetailToastView()
+    
     // MARK: - Life Cycles
     
     override init(frame: CGRect) {
@@ -72,6 +74,10 @@ private extension TermListDetailView {
             $0.font = .pretendardMedium(size: 16)
             $0.textColor = .grayscale50
         }
+        
+        termToastView.do {
+            $0.configure(model: self.termList.first ?? .init(termId: 1, termContentEng: "test", termContentKor: "테스트", termCount: 0))
+        }
     }
     
     func setupHierarchy() {
@@ -79,7 +85,8 @@ private extension TermListDetailView {
             cvBackgroundView,
             termMainCollectionView,
             countLabelBackgroundView,
-            termListCount
+            termListCount,
+            termToastView
         ].forEach { self.addSubviews($0) }
     }
     
@@ -106,5 +113,11 @@ private extension TermListDetailView {
             $0.height.equalTo(termListCount).multipliedBy(1.5)
         }
         
+        termToastView.snp.makeConstraints {
+            $0.leading.equalToSuperview().offset(24)
+            $0.trailing.equalToSuperview().offset(-24)
+            $0.top.equalTo(self.safeAreaLayoutGuide).offset(16)
+            $0.height.equalTo(80)
+        }
     }
 }
