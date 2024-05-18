@@ -45,6 +45,9 @@
 		83FA54402BF50D1D00F4C1CC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */; };
 		DC07798F2BF927BA008F7738 /* TermHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */; };
 		DC0779912BF927D0008F7738 /* TermHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0779902BF927D0008F7738 /* TermHistoryCollectionViewCell.swift */; };
+		DC735E8D2BF9382800A73C49 /* GetHistoryResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC735E8C2BF9382800A73C49 /* GetHistoryResponseDTO.swift */; };
+		DC735E8F2BF93A4500A73C49 /* HistoryAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC735E8E2BF93A4500A73C49 /* HistoryAPIService.swift */; };
+		DC7A4C122BF9446A0081EB84 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A4C112BF9446A0081EB84 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,9 @@
 		83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermHistoryViewController.swift; sourceTree = "<group>"; };
 		DC0779902BF927D0008F7738 /* TermHistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermHistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC735E8C2BF9382800A73C49 /* GetHistoryResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoryResponseDTO.swift; sourceTree = "<group>"; };
+		DC735E8E2BF93A4500A73C49 /* HistoryAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAPIService.swift; sourceTree = "<group>"; };
+		DC7A4C112BF9446A0081EB84 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +256,7 @@
 			children = (
 				83FA54112BF5096C00F4C1CC /* NetworkResult.swift */,
 				83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */,
+				DC7A4C112BF9446A0081EB84 /* Configuration.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -339,8 +346,26 @@
 		DC735E892BF9375B00A73C49 /* TermHistory */ = {
 			isa = PBXGroup;
 			children = (
+				DC735E8A2BF937CD00A73C49 /* DTO */,
+				DC735E8B2BF937D200A73C49 /* Service */,
 			);
 			path = TermHistory;
+			sourceTree = "<group>";
+		};
+		DC735E8A2BF937CD00A73C49 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				DC735E8C2BF9382800A73C49 /* GetHistoryResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		DC735E8B2BF937D200A73C49 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DC735E8E2BF93A4500A73C49 /* HistoryAPIService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +458,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC735E8D2BF9382800A73C49 /* GetHistoryResponseDTO.swift in Sources */,
+				DC735E8F2BF93A4500A73C49 /* HistoryAPIService.swift in Sources */,
 				83FA53E22BF5064200F4C1CC /* ViewController.swift in Sources */,
 				83FA54062BF5081300F4C1CC /* UITextField+.swift in Sources */,
 				83FA540E2BF5086700F4C1CC /* UIImageView+.swift in Sources */,
@@ -452,6 +479,7 @@
 				DC07798F2BF927BA008F7738 /* TermHistoryViewController.swift in Sources */,
 				83FA54082BF5082300F4C1CC /* UILabel+.swift in Sources */,
 				83FA53FA2BF507BE00F4C1CC /* a.swift in Sources */,
+				DC7A4C122BF9446A0081EB84 /* Configuration.swift in Sources */,
 				21A3C1B92BF907A900034B32 /* CreateTermListView.swift in Sources */,
 				83FA54022BF507EC00F4C1CC /* UIStackView+.swift in Sources */,
 				83FA54212BF50A2D00F4C1CC /* HomeView.swift in Sources */,
@@ -587,6 +615,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "http://3.34.16.87";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y63SPPWMGC;
@@ -614,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "http://3.34.16.87";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y63SPPWMGC;
