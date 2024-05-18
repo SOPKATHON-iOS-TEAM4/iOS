@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */; };
 		83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */; };
 		83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */; };
 		83FA53E22BF5064200F4C1CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53E12BF5064200F4C1CC /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		83FA53DA2BF5064200F4C1CC /* Sopkathon_iOS_Team4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopkathon_iOS_Team4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				83FA54112BF5096C00F4C1CC /* NetworkResult.swift */,
+				83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				83FA53FC2BF507C500F4C1CC /* StringLiterals.swift in Sources */,
 				83FA53FE2BF507D200F4C1CC /* FontLiterals.swift in Sources */,
 				83FA54122BF5096C00F4C1CC /* NetworkResult.swift in Sources */,
+				83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */,
 				83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */,
 				83FA54002BF507DB00F4C1CC /* NSObject+.swift in Sources */,
 				83FA540C2BF5085200F4C1CC /* UIButton+.swift in Sources */,
