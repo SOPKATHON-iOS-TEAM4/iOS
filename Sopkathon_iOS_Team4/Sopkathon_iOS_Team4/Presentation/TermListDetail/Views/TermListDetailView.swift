@@ -31,7 +31,7 @@ final class TermListDetailView: UIView {
     
     private let termListCount = UILabel()
     
-    private let termToastView: TermDetailToastView = TermDetailToastView()
+    let termToastView: TermDetailToastView = TermDetailToastView()
     
     // MARK: - Life Cycles
     
@@ -85,8 +85,8 @@ private extension TermListDetailView {
         [
             cvBackgroundImageView,
             termMainCollectionView,
-            countLabelBackgroundView,
-            termListCount,
+//            countLabelBackgroundView,
+//            termListCount,
             termToastView
         ].forEach { self.addSubviews($0) }
     }
@@ -104,16 +104,16 @@ private extension TermListDetailView {
             $0.bottom.equalTo(cvBackgroundImageView).inset(20)
         }
         
-        termListCount.snp.makeConstraints {
-            $0.top.equalTo(termMainCollectionView.snp.bottom).offset(35)
-            $0.centerX.equalToSuperview()
-        }
-        
-        countLabelBackgroundView.snp.makeConstraints {
-            $0.center.equalTo(termListCount)
-            $0.width.equalTo(termListCount).multipliedBy(1.5)
-            $0.height.equalTo(termListCount).multipliedBy(1.5)
-        }
+//        termListCount.snp.makeConstraints {
+//            $0.top.equalTo(termMainCollectionView.snp.bottom).offset(35)
+//            $0.centerX.equalToSuperview()
+//        }
+//        
+//        countLabelBackgroundView.snp.makeConstraints {
+//            $0.center.equalTo(termListCount)
+//            $0.width.equalTo(termListCount).multipliedBy(1.5)
+//            $0.height.equalTo(termListCount).multipliedBy(1.5)
+//        }
         
         termToastView.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(24)

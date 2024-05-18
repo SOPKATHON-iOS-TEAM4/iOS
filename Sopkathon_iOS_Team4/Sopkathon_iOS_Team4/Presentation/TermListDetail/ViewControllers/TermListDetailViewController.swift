@@ -12,14 +12,16 @@ import SnapKit
 
 final class TermListDetailViewController: UIViewController {
     
+    let service = APIService<HomeAPIService>()
+    
     // MARK: - Properties
     private var termList: [TermModel] = [
-        TermModel(termId: 1, termContentEng: "Term One", termContentKor: "용어 하나", termCount: 10),
-        TermModel(termId: 2, termContentEng: "Term Two", termContentKor: "용어 둘", termCount: 20),
-        TermModel(termId: 3, termContentEng: "Term Three", termContentKor: "용어 셋", termCount: 30),
-        TermModel(termId: 4, termContentEng: "Term Four", termContentKor: "용어 넷", termCount: 40),
-        TermModel(termId: 5, termContentEng: "Term Five", termContentKor: "용어 다섯", termCount: 50),
-        TermModel(termId: 6, termContentEng: "Term Six", termContentKor: "용어 여섯", termCount: 60),
+        TermModel(termId: 1, termContentEng: "Term One", termContentKor: "용어 하나", termCount: 0),
+        TermModel(termId: 2, termContentEng: "Term Two", termContentKor: "용어 둘", termCount: 0),
+        TermModel(termId: 3, termContentEng: "Term Three", termContentKor: "용어 셋", termCount: 0),
+        TermModel(termId: 4, termContentEng: "Term Four", termContentKor: "용어 넷", termCount: 0),
+        TermModel(termId: 5, termContentEng: "Term Five", termContentKor: "용어 다섯", termCount: 0),
+        TermModel(termId: 6, termContentEng: "Term Six", termContentKor: "용어 여섯", termCount: 0),
         TermModel(termId: 7, termContentEng: "Term Seven", termContentKor: "용어 일곱", termCount: 70),
         TermModel(termId: 8, termContentEng: "Term Eight", termContentKor: "용어 여덟", termCount: 80),
         TermModel(termId: 9, termContentEng: "Term Nine", termContentKor: "용어 아홉", termCount: 90),
@@ -47,11 +49,55 @@ final class TermListDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        service.getTermList(categoryId: 1)
+        self.termView.termToastView.isHidden = true
+        service.sendRequest(
+            target: .getTermList(categoryId: 1),
+            instance: Response_GetTermListDTO.self,
+            completion: {
+                result in
+                switch result {
+                    
+                case .success(let result):
+//                    print(result.result)
+                    self.termList = result.result.map {
+                        TermModel.init(
+                            termId: $0.wordID,
+                            termContentEng: $0.vocabulary,
+                            termContentKor: $0.meaning,
+                            termCount: $0.clickCount
+                        )
+                    }
+                    self.termView.termMainCollectionView.reloadData()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        )
         termView.termMainCollectionView.delegate = self
         termView.termMainCollectionView.dataSource = self
         setupNavigationBar()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(deleteCell(_:)), name: Notification.Name("deleteThis"), object: nil)
     }
     
+    deinit {
+            // 알림 해제
+            NotificationCenter.default.removeObserver(self, name: Notification.Name("deleteThis"), object: nil)
+        }
+    
+    @objc func deleteCell(_ notification: Notification) {
+            if let userInfo = notification.userInfo, let id = userInfo["id"] as? Int {
+                print("Received ID: \(id)")
+                // 셀 삭제
+                self.termList.remove(at: id)
+            }
+        }
+    
+}
+
+private extension TermListDetailViewController {
+    // API LOGIC
 }
 
 private extension TermListDetailViewController {
@@ -90,17 +136,31 @@ private extension TermListDetailViewController {
 }
 
 extension TermListDetailViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TermMainCollectionlViewCell.className, for: indexPath) as? TermMainCollectionlViewCell else { return }
+        self.termView.termToastView.isHidden = false
+        self.termView.termToastView.fetchData(
+            .init(
+                termId: termList[indexPath.row].termId,
+                termContentEng: termList[indexPath.row].termContentEng,
+                termContentKor: termList[indexPath.row].termContentKor,
+                termCount: termList[indexPath.row].termCount
+            )
+        )
+        cell.count += 1
+    }
 }
 
 extension TermListDetailViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(termList.count)
         return termList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TermMainCollectionlViewCell.className, for: indexPath) as? TermMainCollectionlViewCell else { return UICollectionViewCell() }
+        cell.configure(model: termList[indexPath.row])
+        cell.cellId = indexPath.row
+        cell.count = termList[indexPath.row].termCount
         return cell
     }
 }

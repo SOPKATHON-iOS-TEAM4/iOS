@@ -14,6 +14,7 @@ final class TermDetailToastView: UIView {
     
     // MARK: - Properties
     private var content: TermModel?
+    var selectCount: Int = 0
     
     // MARK: - UI Components
     
@@ -65,6 +66,14 @@ private extension TermDetailToastView {
         
         reduceButton.do {
             $0.setImage(UIImage(named: "ic_reduce"), for: .normal)
+            $0.addAction(UIAction {_ in 
+                self.selectCount += 1
+                let count = self.selectCount 
+                self.countLabel.text = "\(count)/7"
+                if count > 7 {
+                    self.isHidden = true
+                }
+            }, for: .touchUpInside)
         }
         
         countLabel.do {
@@ -110,5 +119,16 @@ private extension TermDetailToastView {
             $0.trailing.equalToSuperview().offset(-16)
             $0.centerY.equalToSuperview()
         }
+    }
+}
+extension TermDetailToastView {
+    func fetchData(_ con: TermModel) {
+        DispatchQueue.main.async {
+            self.selectCount = con.termCount
+            self.engTextLabel.text = con.termContentEng
+            self.korTextLabel.text = con.termContentKor
+            self.countLabel.text = "\(con.termCount)/7"
+        }
+        
     }
 }
