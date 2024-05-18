@@ -28,11 +28,11 @@ final class AddTermView: UIView {
     
     lazy var confirmButton = UIButton()
     
+    let addedTermCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
     private let termLabel = UILabel()
     
     private let termMeaningLabel = UILabel()
-    
-    private let addedTermCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
     
     // MARK: - Properties
     
@@ -190,6 +190,7 @@ extension AddTermView {
                     return nil
                 }
                 
+                cell.delegate = self
                 cell.dataBind(item)
                 return cell
             })
@@ -220,5 +221,14 @@ extension AddTermView {
         let layout = UICollectionViewCompositionalLayout(section: section)
         
         return layout
+    }
+}
+
+extension AddTermView: AddedTermCellDelegate {
+    func didTapDeleteButton(in cell: AddedTermCell) {
+        guard let indexPath = addedTermCollectionView.indexPath(for: cell) else { return }
+        addedTermList.remove(at: indexPath.item)
+        putsnapshotData()
+        
     }
 }

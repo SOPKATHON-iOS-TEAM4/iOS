@@ -19,6 +19,8 @@ final class AddTermViewController: UIViewController {
     
     private let rootView = AddTermView()
     
+    private let addedTermCell = AddedTermCell()
+    
     private var term = ""
     
     private var termMeaning = ""

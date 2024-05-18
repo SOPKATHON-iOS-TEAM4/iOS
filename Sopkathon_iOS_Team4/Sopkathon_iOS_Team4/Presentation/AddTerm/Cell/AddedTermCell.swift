@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol AddedTermCellDelegate: AnyObject {
+    func didTapDeleteButton(in cell: AddedTermCell)
+}
+
 class AddedTermCell: UICollectionViewCell {
     
     // MARK: - UI Properties
+    
+    weak var delegate: AddedTermCellDelegate?
     
     private let addedTermLabel = UILabel()
     
@@ -23,6 +29,7 @@ class AddedTermCell: UICollectionViewCell {
         setUI()
         setHierarchy()
         setLayout()
+        setDeleteButton()
     }
     
     required init?(coder: NSCoder) {
@@ -65,6 +72,16 @@ class AddedTermCell: UICollectionViewCell {
             $0.trailing.equalToSuperview().offset(-7)
             $0.size.equalTo(16)
         }
+    }
+    
+    // MARK: - DeleteButton Action
+    
+    private func setDeleteButton() {
+        deleteButton.addTarget(self, action: #selector(deleteButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc private func deleteButtonTapped() {
+        delegate?.didTapDeleteButton(in: self)
     }
 }
 
