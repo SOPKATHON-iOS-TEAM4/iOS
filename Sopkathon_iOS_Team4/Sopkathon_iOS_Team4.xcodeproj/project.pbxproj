@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21A3C1B52BF9078900034B32 /* CreateTermListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3C1B42BF9078900034B32 /* CreateTermListViewController.swift */; };
+		21A3C1B92BF907A900034B32 /* CreateTermListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3C1B82BF907A900034B32 /* CreateTermListView.swift */; };
 		83DDA7EC2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */; };
 		83FA53DE2BF5064200F4C1CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */; };
 		83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA53DF2BF5064200F4C1CC /* SceneDelegate.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21A3C1B42BF9078900034B32 /* CreateTermListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTermListViewController.swift; sourceTree = "<group>"; };
+		21A3C1B82BF907A900034B32 /* CreateTermListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTermListView.swift; sourceTree = "<group>"; };
 		83DDA7EB2BF8DC8400E83BB9 /* MoyaLoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaLoggingPlugin.swift; sourceTree = "<group>"; };
 		83FA53DA2BF5064200F4C1CC /* Sopkathon_iOS_Team4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopkathon_iOS_Team4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FA53DD2BF5064200F4C1CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21A3C1B62BF9078E00034B32 /* CreateTermList */ = {
+			isa = PBXGroup;
+			children = (
+				21A3C1B72BF9079900034B32 /* ViewController */,
+				21A3C1BA2BF907AC00034B32 /* View */,
+			);
+			path = CreateTermList;
+			sourceTree = "<group>";
+		};
+		21A3C1B72BF9079900034B32 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				21A3C1B42BF9078900034B32 /* CreateTermListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		21A3C1BA2BF907AC00034B32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21A3C1B82BF907A900034B32 /* CreateTermListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		83FA53D12BF5064200F4C1CC = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +155,7 @@
 			children = (
 				83FA54192BF509CF00F4C1CC /* Home */,
 				83FA53E12BF5064200F4C1CC /* ViewController.swift */,
+				21A3C1B62BF9078E00034B32 /* CreateTermList */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -383,8 +413,10 @@
 				83FA54042BF507FB00F4C1CC /* UIView+.swift in Sources */,
 				83FA54082BF5082300F4C1CC /* UILabel+.swift in Sources */,
 				83FA53FA2BF507BE00F4C1CC /* a.swift in Sources */,
+				21A3C1B92BF907A900034B32 /* CreateTermListView.swift in Sources */,
 				83FA54022BF507EC00F4C1CC /* UIStackView+.swift in Sources */,
 				83FA54212BF50A2D00F4C1CC /* HomeView.swift in Sources */,
+				21A3C1B52BF9078900034B32 /* CreateTermListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
