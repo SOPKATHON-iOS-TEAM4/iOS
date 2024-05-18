@@ -9,6 +9,7 @@
 
 ## 🛠️ Main Function
 
+- 카테고리
 - 단어 입력하기
 - 단어 암기하기
 - 외운 단어 확인하기
@@ -18,7 +19,7 @@
 | [가현](https://github.com/mcrkgus) | [정빈](https://github.com/kingjeongkong) | [민서](https://github.com/FpRaArNkK) | [연서](https://github.com/oyslucy) | 
 | :--: | :--: | :--: | :--: |
 | <img alt="가현" src="https://github.com/SOPKATHON-iOS-TEAM4/iOS/assets/84556636/5feff183-0474-492e-a8c2-d0c7f67e013e" width="300" height="300"/> | <img alt="정빈" src="https://github.com/SOPKATHON-iOS-TEAM4/iOS/assets/84556636/ba75edb2-db30-4eed-8dee-9e8520ce58df" width="300" height="300"/> | <img alt="민서" src="https://github.com/SOPKATHON-iOS-TEAM4/iOS/assets/84556636/3fd0433e-627d-48f6-bfa7-c62d460af2c9" width="300" height="300"/> | <img alt="연서" src="https://github.com/SOPKATHON-iOS-TEAM4/iOS/assets/84556636/58e074a6-b95c-4972-a2d1-b7ffea9ed8ba" width="300" height="300"/> |
-| <p align = "center"> | <p align = "center"> | <p align = "center"> | <p align = "center"> |
+| <p align = "center">온보딩 / 카테고리 | <p align = "center"> 단어 입력 | <p align = "center"> 단어 암기 | <p align = "center"> 단어 확인 |
 
 
 <br>
