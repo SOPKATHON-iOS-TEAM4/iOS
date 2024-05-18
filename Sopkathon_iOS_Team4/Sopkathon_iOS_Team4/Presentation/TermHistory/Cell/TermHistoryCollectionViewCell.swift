@@ -85,3 +85,11 @@ final class TermHistoryCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 10
     }
 }
+
+extension TermHistoryCollectionViewCell {
+    func dataBind(categoryName: String, term: String, meaning: String) {
+        self.categoryLabel.text = categoryName
+        self.termLabel.text = term
+        self.meaningLabel.text = meaning
+    }
+}
