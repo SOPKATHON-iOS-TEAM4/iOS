@@ -7,17 +7,19 @@
 
 import Foundation
 struct MainModel {
-    let title: String
-    let count: Int
+    let categoryId: Int
+    let categoryName: String
+    let wordsNumber: Int
 }
 
 extension MainModel {
     static func dummy() -> [MainModel] {
         return [
-            MainModel(title: "test", count: 1),
-            MainModel(title: "테스틀라고~", count: 2),
-            MainModel(title: "하아아아아암", count: 12),
-            MainModel(title: "하아아아아암", count: 12)
+            MainModel(categoryId: 0, categoryName: "test", wordsNumber: 1),
+            MainModel(categoryId: 1, categoryName: "test", wordsNumber: 2),
+            MainModel(categoryId: 2, categoryName: "test", wordsNumber: 3),
+            MainModel(categoryId: 3, categoryName: "test", wordsNumber: 5),
+            MainModel(categoryId: 4, categoryName: "test", wordsNumber: 6),
         ]
     }
 }
