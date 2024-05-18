@@ -12,6 +12,10 @@ import Then
 
 final class TermHistoryViewController: UIViewController {
     
+    let testService = APIService<HomeAPIService>()
+    private var historyData: [WordList] = []
+
+    
     // MARK: - UI Components
     
     let navigationBar = UINavigationBar().then{
@@ -38,6 +42,7 @@ final class TermHistoryViewController: UIViewController {
         setDelegate()
         setRegister()
         setNavigationBar()
+        fetchData()
     }
     
     private func setupHierachy() {
@@ -55,6 +60,7 @@ final class TermHistoryViewController: UIViewController {
             $0.top.equalTo(navigationBar.snp.bottom).offset(16)
             $0.centerX.bottom.equalToSuperview()
             $0.horizontalEdges.equalToSuperview()
+            $0.height.equalTo(5000)
         }
     }
     
@@ -97,12 +103,36 @@ final class TermHistoryViewController: UIViewController {
 
 extension TermHistoryViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        historyData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TermHistoryCollectionViewCell.className, for: indexPath) as? TermHistoryCollectionViewCell
         else { return UICollectionViewCell() }
+        cell.dataBind(categoryName: historyData[indexPath.row].memorizedVocabulary,
+                      term: historyData[indexPath.row].memorizedVocabulary,
+                      meaning: historyData[indexPath.row].memorizedMeaning)
         return cell
     }
 }
+
+extension TermHistoryViewController {
+     private func fetchData() {
+         testService.sendRequest(
+            target: .getMemorizedWords,
+             instance: Response_GetMomorizedWordsDTO.self,
+             completion: { result in
+                 switch result {
+                     
+                 case .success(let result):
+                     print(result.result)
+                     self.historyData = result.result
+                     self.termHistoryCollectionView.reloadData()
+                 case .failure(let error):
+                     print(error)
+                     
+                 }
+             }
+         )
+     }
+ }
