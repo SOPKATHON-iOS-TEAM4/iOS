@@ -49,7 +49,7 @@ final class TermHistoryViewController: UIViewController {
     
     private func setupLayout() {
         navigationBar.snp.makeConstraints{
-            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            $0.top.equalToSuperview().inset(46)
             $0.horizontalEdges.equalToSuperview()
             $0.height.equalTo(44)
         }
@@ -71,8 +71,21 @@ final class TermHistoryViewController: UIViewController {
     
     private func setNavigationBar() {
         let navItem = UINavigationItem(title: "단어장")
-        navItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_back"), style: .plain, target: self, action: #selector(tapDismissButton))
+
+        let titleAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .font: UIFont.pretendardSemiBold(size: 16)
+        ]
+        navigationBar.titleTextAttributes = titleAttributes
+        
+        let backButtonImage = UIImage(named: "ic_back")?.withRenderingMode(.alwaysTemplate)
+        let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: self, action: #selector(tapDismissButton))
+        backButton.tintColor = .grayscale20
+        
+        navItem.leftBarButtonItem = backButton
+        
         navigationBar.setItems([navItem], animated: true)
+        navigationBar.barTintColor = .black
     }
     
     @objc func tapDismissButton(){

@@ -10,10 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-class TermHistoryCollectionViewCell: UICollectionViewCell {
-    
-    //MARK: - Properties
-    
+final class TermHistoryCollectionViewCell: UICollectionViewCell {
     
     //MARK: - UIViews
     
@@ -44,20 +41,21 @@ class TermHistoryCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initViews()
-        initConstraints()
-        initUI()
+        setupHierachy()
+        setupLayout()
+        setupStyle()
+
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func initViews() {
+    private func setupHierachy() {
         addSubviews(categoryBackgroundView,categoryLabel, termLabel, meaningLabel)
     }
     
-    private func initConstraints() {
+    private func setupLayout() {
         
         categoryBackgroundView.snp.makeConstraints{
             $0.top.equalToSuperview().inset(11)
@@ -82,7 +80,7 @@ class TermHistoryCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    private func initUI() {
+    private func setupStyle() {
         self.backgroundColor = .grayscale80
         self.layer.cornerRadius = 10
     }
