@@ -43,6 +43,8 @@
 		83FA543C2BF50C3400F4C1CC /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543B2BF50C3400F4C1CC /* Pretendard-Thin.otf */; };
 		83FA543F2BF50D1D00F4C1CC /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543D2BF50D1D00F4C1CC /* Pretendard-Medium.otf */; };
 		83FA54402BF50D1D00F4C1CC /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */; };
+		DC07798F2BF927BA008F7738 /* TermHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */; };
+		DC0779912BF927D0008F7738 /* TermHistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0779902BF927D0008F7738 /* TermHistoryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		83FA543B2BF50C3400F4C1CC /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		83FA543D2BF50D1D00F4C1CC /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		83FA543E2BF50D1D00F4C1CC /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermHistoryViewController.swift; sourceTree = "<group>"; };
+		DC0779902BF927D0008F7738 /* TermHistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermHistoryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 		83FA53F12BF5075300F4C1CC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DC07798B2BF92798008F7738 /* TermHistory */,
 				83FA54192BF509CF00F4C1CC /* Home */,
 				83FA53E12BF5064200F4C1CC /* ViewController.swift */,
 				21A3C1B62BF9078E00034B32 /* CreateTermList */,
@@ -305,6 +310,31 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		DC07798B2BF92798008F7738 /* TermHistory */ = {
+			isa = PBXGroup;
+			children = (
+				DC07798C2BF927A0008F7738 /* Cell */,
+				DC07798D2BF927B1008F7738 /* TermHistoryViewController */,
+			);
+			path = TermHistory;
+			sourceTree = "<group>";
+		};
+		DC07798C2BF927A0008F7738 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DC0779902BF927D0008F7738 /* TermHistoryCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DC07798D2BF927B1008F7738 /* TermHistoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC07798E2BF927BA008F7738 /* TermHistoryViewController.swift */,
+			);
+			path = TermHistoryViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,12 +441,14 @@
 				83FA540C2BF5085200F4C1CC /* UIButton+.swift in Sources */,
 				83FA53E02BF5064200F4C1CC /* SceneDelegate.swift in Sources */,
 				83FA54042BF507FB00F4C1CC /* UIView+.swift in Sources */,
+				DC07798F2BF927BA008F7738 /* TermHistoryViewController.swift in Sources */,
 				83FA54082BF5082300F4C1CC /* UILabel+.swift in Sources */,
 				83FA53FA2BF507BE00F4C1CC /* a.swift in Sources */,
 				21A3C1B92BF907A900034B32 /* CreateTermListView.swift in Sources */,
 				83FA54022BF507EC00F4C1CC /* UIStackView+.swift in Sources */,
 				83FA54212BF50A2D00F4C1CC /* HomeView.swift in Sources */,
 				21A3C1B52BF9078900034B32 /* CreateTermListViewController.swift in Sources */,
+				DC0779912BF927D0008F7738 /* TermHistoryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,7 +581,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT2Q6HC762;
+				DEVELOPMENT_TEAM = Y63SPPWMGC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sopkathon_iOS_Team4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -576,7 +608,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT2Q6HC762;
+				DEVELOPMENT_TEAM = Y63SPPWMGC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sopkathon_iOS_Team4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
